@@ -24,7 +24,7 @@
 #define OCTAVE_PIN A5
 #define MIDI_TX_PIN A7
 
-#define breath_threshold 10 //Breath on/off threshold
+#define breath_threshold 5 //Breath on/off threshold
 #define breath_scale 0.5 //Breath scaling factor
 #define breath_array_len 8
 
