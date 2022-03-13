@@ -1,8 +1,5 @@
 //see https://github.com/dadamachines/doppler for doppler info
 
-#include "MIDIUSB.h"
-
-
 void setupBoard(void){
   //Pin setup
   //Digital Pins 0-9 are key inputs
@@ -11,7 +8,7 @@ void setupBoard(void){
   //A7 is MIDI out
 
   //Button setup
-  for (int n=0;n<10;n++){
+  for (int n=2;n<12;n++){
     pinMode(n,INPUT);
   }
 }
@@ -63,43 +60,7 @@ int readBreath(void){
 }
 
 
-int readBreath_new(void){
-  //breath_array
-  float breath = 0;
-  int n;
-  int breath_sum = 0, breath_filt=0;//, breath_raw;
-  //Read the breath sensor value
-  breath = (float(analogRead(BREATH_PIN))/1024-breath_at_rest); //Remove atmospheric pressure
-  //Scale the breath input
-  if(breath<0){
-    breath = -1*pow(-1*breath,breath_scale);
-    breath_raw = min(0,max(-127,int(breath*127)));
-  }else{
-    breath = pow(breath,breath_scale);
-    breath_raw = min(127,max(0,int(breath*127)));
-  }
-//  breath_raw = min(127,max(0,int(breath*127)));
-
-  //breath_array code
-  // Using pointers because I couldn't get normal array indexing to work
-
-  // Shift values right through the breath array
-  for (n=0;n<breath_array_len-1;n++){
-    *(breath_array+n) = *(breath_array+(n+1));
-  }
-  //Add new breath value
-  *(breath_array+breath_array_len-1) = breath_raw;
-  //Average the breath value array
-  for (n=0;n<breath_array_len;n++){
-    breath_sum = breath_sum + *(breath_array+n);
-  }
-  breath_filt = breath_sum/breath_array_len;
-
-  
-  return breath_filt;
-}
-
-uint16_t readButtons(void){
+int readButtons(void){
   //Input - Button
 //  0 - B
 //  1 - A (C)
@@ -114,9 +75,10 @@ uint16_t readButtons(void){
 //  A5 - Octave [0.33, 1.65, 2.97]V
 
 byte n = 0;
-uint16_t note_buttons = 0, note_midi = 0;
-for(n=0;n<10;n++){
-  note_buttons = note_buttons | (digitalRead(n)<<n);
+uint16_t note_buttons = 0;
+int note_midi = 0;
+for(n=2;n<12;n++){
+  note_buttons = note_buttons | (digitalRead(n)<<(n-2));
 }
 switch (note_buttons){
     case 0:
@@ -181,6 +143,7 @@ switch (note_buttons){
       break;
     default:
       note_midi = -1;
+      break;
   }
 
 // Adjust the octave
