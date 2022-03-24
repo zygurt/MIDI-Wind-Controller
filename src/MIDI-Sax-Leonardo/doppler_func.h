@@ -31,15 +31,22 @@ int readBreath(void){
   int n;
   int breath_sum = 0, breath_filt=0;//, breath_raw;
   //Read the breath sensor value
-  breath = (float(analogRead(BREATH_PIN))/1024-breath_at_rest); //Remove atmospheric pressure
+  // breath = (float(analogRead(BREATH_PIN))/1024-breath_at_rest); //Remove atmospheric pressure
+  breath_raw = analogRead(BREATH_PIN);
+  // Serial.print(breath_raw);
+  // Serial.print("\t");
+  breath = map(analogRead(BREATH_PIN), breath_at_rest*1024, 1024, 0, 1024);
+  breath = breath/1024;  
   //Scale the breath input
   if(breath<0){
     breath = -1*pow(-1*breath,breath_scale);
   }else{
     breath = pow(breath,breath_scale);
   }
+  
   breath_raw = min(127,max(0,int(breath*127)));
-
+  // Serial.print(breath_raw);
+  // Serial.print("\n");
   //breath_array code
   // Using pointers because I couldn't get normal array indexing to work
 
@@ -83,63 +90,79 @@ for(n=2;n<12;n++){
 switch (note_buttons){
     case 0:
     //C#
-      note_midi = 73;
+      note_midi = 49;
       break;
     case 2:
     //C
-      note_midi = 72;
+      note_midi = 48;
       break;
     case 257:
     //C alternate
-      note_midi = 72;
+      note_midi = 48;
       break;
     case 1:
     //B
-      note_midi = 71;
+      note_midi = 47;
       break;
     case 19:
     //A#
-      note_midi = 70;
+      note_midi = 46;
       break;
     case 259:
     //A# alternate
-      note_midi = 70;
+      note_midi = 46;
       break;
     case 3:
     //A
-      note_midi = 69;
+      note_midi = 45;
       break;
     case 15:
     //G#
-      note_midi = 68;
+      note_midi = 44;
       break;
     case 7:
     //G
-      note_midi = 67;
+      note_midi = 43;
       break;
     case 39:
     //F#
-      note_midi = 66;
+      note_midi = 42;
       break;
     case 23:
     //F
-      note_midi = 65;
+      note_midi = 41;
       break;
     case 55:
     //E
-      note_midi = 64;
+      note_midi = 40;
       break;
     case 247:
     //D#
-      note_midi = 63;
+      note_midi = 39;
       break;
     case 119:
     //D
-      note_midi = 62;
+      note_midi = 38;
+      break;
+    case 639:
+    //C# Low
+      note_midi = 37;
       break;
     case 631:
     //C Low
-      note_midi = 60;
+      note_midi = 36;
+      break;
+    case 128:
+    //Octave Up
+      transpose++;
+      note_midi = -1;
+      while(digitalRead(9));
+      break;
+    case 512:
+    //Octave Down
+      transpose--;
+      note_midi = -1;
+      while(digitalRead(11));
       break;
     default:
       note_midi = -1;
@@ -147,26 +170,28 @@ switch (note_buttons){
   }
 
 // Adjust the octave
+if (note_midi>0){
   int octave_read = 0;
-  octave_read = analogRead(A5);
-  if (octave_read>720){
+  octave_read = analogRead(OCTAVE_PIN);
+  // Serial.println(octave_read);
+  if (octave_read>706){
     //top octave
-    note_midi += 24;
+    note_midi += (36+transpose*12);
 //    analogWrite(Octave_LED_Pin, 255);
-  }else if(octave_read>302){
+  }else if(octave_read>307){
     //middle octave
-    note_midi += 12;
+    note_midi += (24+transpose*12);
 //    analogWrite(Octave_LED_Pin, 64);
-  }else if(octave_read>46){
+  }else if(octave_read>69){
     //bottom octave
-    note_midi -= 12;
+    note_midi += (0+transpose*12);
 //    analogWrite(Octave_LED_Pin, 64);
   }else{
     //home octave
-    note_midi += 0;
+    note_midi += (12+transpose*12);
 //    analogWrite(Octave_LED_Pin, 0);
   }
-
+}
 return note_midi;
 
 }

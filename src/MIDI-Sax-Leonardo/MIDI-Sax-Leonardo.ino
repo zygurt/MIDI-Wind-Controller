@@ -11,6 +11,7 @@ int breath_raw = 0;
 int prev_breath = 0;
 int prev_CC = 0;
 int current_CC = 0;
+byte transpose = 0;
 
 
 //Custom Includes
@@ -23,7 +24,8 @@ int current_CC = 0;
 void setup() { // put your setup code here, to run once:
   setupBoard();
   setupBreath();
-  Serial.begin(9600);  //USB MIDI Serial Begin
+  // Serial.begin(9600);  //USB MIDI Serial Begin
+  USB_PANIC();
 }
 
 void loop() {  // put your main code here, to run repeatedly:
@@ -31,24 +33,26 @@ void loop() {  // put your main code here, to run repeatedly:
   //To test, read buttons and set lights on 4x4 grid
   int note_midi;
   note_midi = readButtons();
-  Serial.println(note_midi);
+  // Serial.println(note_midi);
   int breath_filt;
   breath_filt = readBreath();
-//  Serial.println(breath_filt);
+  // Serial.print(breath_filt);
+  // Serial.print("\t");
+  // Serial.println(breath_raw);
   //Set CC2 to breath value
   //Also add an LED to give visual feedback in the future
-  current_CC = min(127,max(0,breath_filt*2));
+  current_CC = min(127,max(0,breath_raw));
   if (abs(current_CC-prev_CC)>CC_threshold){
-    USBcontrolChange(0, breath_CC, min(127,max(0,breath_filt*2))); // Set the value of controller 2 (breath) on channel 0 to breath value
+    USBcontrolChange(0, breath_CC, min(127,max(0,breath_raw))); // Set the value of controller 2 (breath) on channel 0 to breath value
     prev_CC = current_CC;
   }
   
   //Panic code
   //If the user sucks in instead of blowing out
-  if (breath_raw<-10){
-    Serial.println("PANIC");
-    USB_PANIC();
-  }
+  // if (breath_raw<-10){
+  //   Serial.println("PANIC");
+  //   USB_PANIC();
+  // }
 
 
   //Send MIDI message logic.
@@ -60,7 +64,7 @@ void loop() {  // put your main code here, to run repeatedly:
 
   if (breath_filt<breath_threshold){
     note_on = 0;
-    USBnoteOff(0, prev_note, min(127,max(0,breath_raw*2)));//);
+    USBnoteOff(0, prev_note, min(127,max(0,breath_raw)));//);
     retrigger_flag = 0;
   }
 
@@ -68,14 +72,14 @@ void loop() {  // put your main code here, to run repeatedly:
     retrigger_flag = 1;
   }
   
-  if (note_midi!=prev_note && note_midi!=-1 || retrigger_flag && !note_on){ //&& breath>threshold
+  if ((note_midi!=prev_note && note_midi>0 && note_midi<128) || (retrigger_flag && !note_on)){ //&& breath>threshold
     //turn off previous note
-    USBnoteOff(0, prev_note, min(127,max(0,breath_raw*2)));//);  // Channel 0, middle C, normal velocity
+    USBnoteOff(0, prev_note, min(127,max(0,breath_raw)));//);  // Channel 0, middle C, normal velocity
     //MidiUSB.flush(); //Moved into the noteOn function
     note_on = 0;
 
     //turn on new note
-    USBnoteOn(0, note_midi, min(127,max(0,breath_raw*2)));//min(127,max(0,int(breath*127))));   // Channel 0, middle C, normal velocity
+    USBnoteOn(0, note_midi, min(127,max(0,breath_raw)));//min(127,max(0,int(breath*127))));   // Channel 0, middle C, normal velocity
     //MidiUSB.flush();  //Moved into the noteOn function
     note_on = 1;
     //Serial.println(note);
