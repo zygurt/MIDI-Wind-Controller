@@ -13,7 +13,7 @@
 Updates are occasionally posted on [Instagram](https://www.instagram.com/zygurt/)
 
 ## Current prototype status:
-![Prototype 2]()
+![Prototype 2](https://raw.githubusercontent.com/zygurt/MIDI-Wind-Controller/main/images/v2.jpg)
 
 ## Legacy information
 Videos about the initial prototype can be found on [Youtube](https://www.youtube.com/watch?v=xT4aQg9pAro&list=PLZOH4oUjroN9ol0y3P3p1gkSgcQwLBbCZ)
