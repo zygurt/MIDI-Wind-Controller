@@ -153,17 +153,17 @@ switch (note_buttons){
     case 128:
     //Octave Up
       transpose++;
-      note_midi = -1;
+      note_midi = 0;
       while(digitalRead(9)); //Hold while button is pressed
       break;
     case 512:
     //Octave Down
       transpose--;
-      note_midi = -1;
+      note_midi = 0;
       while(digitalRead(11)); //Hold while button is pressed
       break;
     default:
-      note_midi = -1;
+      note_midi = 0;
       break;
   }
 
