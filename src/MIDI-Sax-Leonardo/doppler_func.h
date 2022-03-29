@@ -32,7 +32,7 @@ int readBreath(void){
   int breath_sum = 0, breath_filt=0;//, breath_raw;
   //Read the breath sensor value
   // breath = (float(analogRead(BREATH_PIN))/1024-breath_at_rest); //Remove atmospheric pressure
-  breath_raw = analogRead(BREATH_PIN);
+  // breath_raw = analogRead(BREATH_PIN);
   // Serial.print(breath_raw);
   // Serial.print("\t");
   breath = map(analogRead(BREATH_PIN), breath_at_rest*1024, 1024, 0, 1024);
@@ -156,13 +156,13 @@ switch (note_buttons){
     //Octave Up
       transpose++;
       note_midi = -1;
-      while(digitalRead(9));
+      while(digitalRead(9)); //Hold while button is pressed
       break;
     case 512:
     //Octave Down
       transpose--;
       note_midi = -1;
-      while(digitalRead(11));
+      while(digitalRead(11)); //Hold while button is pressed
       break;
     default:
       note_midi = -1;
