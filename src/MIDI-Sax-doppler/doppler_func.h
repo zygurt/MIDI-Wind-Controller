@@ -154,13 +154,13 @@ switch (note_buttons){
     //Octave Up
       transpose++;
       note_midi = 0;
-      while(digitalRead(9)); //Hold while button is pressed
+      while(digitalRead(7)); //Hold while button is pressed
       break;
     case 512:
     //Octave Down
       transpose--;
       note_midi = 0;
-      while(digitalRead(11)); //Hold while button is pressed
+      while(digitalRead(9)); //Hold while button is pressed
       break;
     default:
       note_midi = 0;
@@ -171,16 +171,16 @@ switch (note_buttons){
 if (note_midi>0){
   int octave_read = 0;
   octave_read = analogRead(OCTAVE_PIN);
-  // Serial.println(octave_read);
-  if (octave_read>706){
+  //Serial.println(octave_read);
+  if (octave_read>700){
     //top octave
     note_midi += (36+transpose*12);
 //    analogWrite(Octave_LED_Pin, 255);
-  }else if(octave_read>307){
+  }else if(octave_read>304){
     //middle octave
     note_midi += (24+transpose*12);
 //    analogWrite(Octave_LED_Pin, 64);
-  }else if(octave_read>69){
+  }else if(octave_read>40){
     //bottom octave
     note_midi += (0+transpose*12);
 //    analogWrite(Octave_LED_Pin, 64);

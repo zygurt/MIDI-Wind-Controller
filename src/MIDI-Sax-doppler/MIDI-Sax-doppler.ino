@@ -32,7 +32,7 @@ void setup() { // put your setup code here, to run once:
 
   setupBoard();
   setupBreath();
-  // Serial.begin(31250);  //MIDI Serial Begin
+  Serial.begin(9600);  //MIDI Serial Begin
   USB_PANIC(); //Make sure everything is off on reset
 }
 
@@ -44,7 +44,7 @@ void loop() {  // put your main code here, to run repeatedly:
   
   int breath_filt;
   breath_filt = readBreath();
-//  Serial.println(breath_filt);
+  Serial.println(breath_filt);
   //Set CC2 to breath value
   //Also add an LED to give visual feedback in the future
   current_CC = min(127,max(0,breath_raw));
