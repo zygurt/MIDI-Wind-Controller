@@ -12,7 +12,9 @@ int breath_raw = 0;
 int prev_breath = 0;
 byte prev_CC = 0;
 byte current_CC = 0;
-byte transpose = 0;
+byte octave_transpose = 0;
+byte semitone_transpose = 0;
+bool menu = 0;
 
 //Custom Includes
 
