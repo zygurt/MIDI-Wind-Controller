@@ -1,0 +1,128 @@
+(footprint "Omron B3K L13L"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -7 -10 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1e143c97-26d9-4f9c-b792-78233f00ad35")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Omron_B3K_L13L"
+		(at 6 10 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6e80be00-d627-4451-916b-b644cc85e2cb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c26bbebf-ebf0-4130-9445-464848bc9105")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Single Pole Single Throw (SPST) switch"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "75a77240-0d81-4814-b0b8-b8272ce6dc7b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -7.75 -7.75)
+		(end 7.75 7.75)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "0a9dbb51-5e48-4784-b8f3-82ef75cc0651")
+	)
+	(fp_rect
+		(start -9 -9)
+		(end 9 9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "3f54275e-a2a7-4e4b-b91d-95f34c11d682")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -4 10 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8e1f1248-3de1-4adc-8b3a-492ff81512af")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" thru_hole circle
+		(at 0 -5 180)
+		(size 2 2)
+		(drill 1.7)
+		(property pad_prop_mechanical)
+		(layers "F&B.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6f392c34-5a6e-4e16-b447-e83d13471da0")
+	)
+	(pad "" thru_hole circle
+		(at 0 5 180)
+		(size 2 2)
+		(drill 1.7)
+		(property pad_prop_mechanical)
+		(layers "F&B.Cu" "*.Mask")
+		(remove_unused_layers yes)
+		(keep_end_layers yes)
+		(uuid "302e57af-cbcf-4539-b4cf-90b9bedd1313")
+	)
+	(pad "1" thru_hole circle
+		(at -4.81 -1.775 180)
+		(size 2.5 2.5)
+		(drill 1)
+		(layers "F&B.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2f6f5813-f0eb-44c5-a0cc-04c2d00b988a")
+	)
+	(pad "2" thru_hole circle
+		(at 4.81 1.775 180)
+		(size 2.5 2.5)
+		(drill 1)
+		(layers "F&B.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b7dca5a3-a0ff-4d18-bf1f-ad96670179e4")
+	)
+	(embedded_fonts no)
+)
