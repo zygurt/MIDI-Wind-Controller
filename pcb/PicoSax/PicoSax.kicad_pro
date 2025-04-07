@@ -498,10 +498,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gbr/",
+      "plot": "SVG/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "PicoSax.stl",
       "svg": "",
       "vrml": ""
     },
