@@ -1,4 +1,4 @@
-24735605853036833
+24789613409141075
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -68515,6 +68515,111 @@ threaded screw
 0
 4
 1
+MyLibrary
+19-C47&slash_RSGHBHC-5V01&slash_2T_EVE
+
+19-C47/RSGHBHC-5V01/2T 
+0
+4
+4
+MyLibrary
+19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-L
+
+19-C47/RSGHBHC-5V01/2T 
+0
+4
+4
+MyLibrary
+19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M
+
+19-C47/RSGHBHC-5V01/2T 
+0
+4
+4
+MyLibrary
+BPS110 AD0P15
+
+
+0
+8
+8
+MyLibrary
+MIDI_DIN5
+
+
+0
+7
+5
+MyLibrary
+MP3V5004GP
+
+
+0
+8
+8
+MyLibrary
+Omron B3K L13L
+
+
+0
+4
+2
+MyLibrary
+Perfboard 12x20
+
+
+0
+240
+0
+MyLibrary
+Perfboard 12x24
+
+
+0
+288
+0
+MyLibrary
+Perfboard 13x24
+
+
+0
+312
+0
+MyLibrary
+PiPico Header
+
+
+0
+20
+20
+MyLibrary
+Untitled
+
+
+0
+20
+20
+MyLibrary
+Untitled_1
+
+
+0
+0
+0
+MyLibrary
+Untitled_2
+
+
+0
+8
+8
+MyLibrary
+Untitled_3
+
+
+0
+0
+0
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
@@ -86680,6 +86785,118 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
+PicoSax
+19-C47_RSGHBHC-5V01-2T
+
+19-C47/RSGHBHC-5V01/2T 
+0
+4
+4
+PicoSax
+BPS110 AD0P15
+
+
+0
+8
+8
+PicoSax
+C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+capacitor handsolder
+0
+2
+2
+PicoSax
+D_DO-41_SOD81_P10.16mm_Horizontal
+Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf
+Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm
+0
+2
+2
+PicoSax
+MIDI_DIN5
+
+
+0
+9
+5
+PicoSax
+MP3V5004GP
+
+
+0
+8
+8
+PicoSax
+MountingHole_3.2mm_M3
+Mounting Hole 3.2mm, no annular, M3
+mounting hole 3.2mm no annular m3
+0
+0
+0
+PicoSax
+MountingHole_3mm
+Mounting Hole 3mm, no annular
+mounting hole 3mm no annular
+0
+0
+0
+PicoSax
+Omron B3K L13L
+
+
+0
+4
+2
+PicoSax
+Perfboard 12x20
+
+
+0
+240
+0
+PicoSax
+PiPico Header
+
+
+0
+20
+20
+PicoSax
+PinHeader_1x02_P2.54mm_Vertical
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
+PicoSax
+R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor handsolder
+0
+2
+2
+PicoSax
+R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
+Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=7.62mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0204 series Axial Horizontal pin pitch 7.62mm 0.167W length 3.6mm diameter 1.6mm
+0
+2
+2
+PicoSax
+RaspberryPi_Pico_Common_Unspecified
+Raspberry Pi Pico versatile common (Pico & Pico W) footprint for surface-mount or through-hole hand soldering, supports Raspberry Pi Pico 2, default socketed model has height of 8.51mm, https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf
+module usb pcb antenna
+0
+80
+40
+PicoSax
+Untitled
+
+
+0
+0
+0
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf

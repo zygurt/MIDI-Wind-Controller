@@ -259,7 +259,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "D?"
+		(property "Reference" "U"
 			(at 20.32 10.16 0)
 			(effects
 				(font
@@ -302,6 +302,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "19-C47/RSGHBHC-5V01/2T"

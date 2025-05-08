@@ -5,201 +5,6 @@
 	(uuid "ef0a1a94-772b-4785-b748-662adf24a5cd")
 	(paper "A3")
 	(lib_symbols
-		(symbol "MP3V5004GP_1"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "MyLibrary:MP3V5004GP"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MP3V5004GP_1_1_1"
-				(pin no_connect line
-					(at 0 -2.54 0)
-					(length 2.54)
-					(name "N/C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -5.08 0)
-					(length 2.54)
-					(name "Vs"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 0 -7.62 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 -10.16 0)
-					(length 2.54)
-					(name "Vout"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 0 -12.7 0)
-					(length 2.54)
-					(name "N/C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 0 -15.24 0)
-					(length 2.54)
-					(name "N/C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 0 -17.78 0)
-					(length 2.54)
-					(name "N/C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 0 -20.32 0)
-					(length 2.54)
-					(name "N/C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "PicoSax:+3V3"
 			(power)
 			(pin_numbers
@@ -1512,6 +1317,201 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PicoSax:MP3V5004GP_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MyLibrary:MP3V5004GP"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MP3V5004GP_1_1_1"
+				(pin no_connect line
+					(at 0 -2.54 0)
+					(length 2.54)
+					(name "N/C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -5.08 0)
+					(length 2.54)
+					(name "Vs"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 0 -7.62 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -10.16 0)
+					(length 2.54)
+					(name "Vout"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -12.7 0)
+					(length 2.54)
+					(name "N/C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(name "N/C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -17.78 0)
+					(length 2.54)
+					(name "N/C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -20.32 0)
+					(length 2.54)
+					(name "N/C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6162,7 +6162,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03d70982-03b4-4ba8-8eb4-7c10e6fc9685")
-		(property "Reference" "L4"
+		(property "Reference" "D5"
 			(at 283.21 143.51 0)
 			(effects
 				(font
@@ -6178,7 +6178,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 265.684 141.732 0)
 			(effects
 				(font
@@ -6222,7 +6222,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L4")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -7369,7 +7369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24ed4751-dc86-4d4e-91de-fbae56884fdb")
-		(property "Reference" "L13"
+		(property "Reference" "D14"
 			(at 353.06 184.15 0)
 			(effects
 				(font
@@ -7385,7 +7385,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 335.534 182.372 0)
 			(effects
 				(font
@@ -7429,7 +7429,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L13")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -7647,7 +7647,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c335477-73ba-43d8-8d07-0217aa15144c")
-		(property "Reference" "L9"
+		(property "Reference" "D10"
 			(at 353.06 102.87 0)
 			(effects
 				(font
@@ -7663,7 +7663,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 335.534 101.092 0)
 			(effects
 				(font
@@ -7707,7 +7707,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L9")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -8079,7 +8079,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLibrary:MIDI_DIN5"
+		(property "Footprint" "PicoSax:MIDI_DIN5"
 			(at 152.4 67.31 0)
 			(effects
 				(font
@@ -10033,7 +10033,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "589e8cf8-7c8a-4239-b5e0-63e523780eed")
-		(property "Reference" "L6"
+		(property "Reference" "D7"
 			(at 283.21 184.15 0)
 			(effects
 				(font
@@ -10049,7 +10049,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 265.684 182.372 0)
 			(effects
 				(font
@@ -10093,7 +10093,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L6")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -10176,7 +10176,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e35cde5-0a83-4ed1-97a3-01979355b2a0")
-		(property "Reference" "L5"
+		(property "Reference" "D6"
 			(at 283.21 163.83 0)
 			(effects
 				(font
@@ -10192,7 +10192,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 265.684 162.052 0)
 			(effects
 				(font
@@ -10236,7 +10236,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L5")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -10992,7 +10992,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6cb793fa-b9ae-4076-8340-51d4d05d3ca4")
-		(property "Reference" "L10"
+		(property "Reference" "D11"
 			(at 353.06 123.19 0)
 			(effects
 				(font
@@ -11008,7 +11008,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 335.534 121.412 0)
 			(effects
 				(font
@@ -11052,7 +11052,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L10")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -11191,7 +11191,6 @@
 		)
 	)
 	(symbol
-		(lib_name "MP3V5004GP_1")
 		(lib_id "PicoSax:MP3V5004GP_1")
 		(at 212.09 187.96 0)
 		(unit 1)
@@ -11355,7 +11354,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73b923e4-1174-4ad3-bfa3-fd66d7816cfb")
-		(property "Reference" "L8"
+		(property "Reference" "D9"
 			(at 353.06 82.55 0)
 			(effects
 				(font
@@ -11371,7 +11370,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 335.534 80.772 0)
 			(effects
 				(font
@@ -11415,7 +11414,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L8")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -11498,7 +11497,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74b0a22c-7d18-4da2-8bc1-0c4fd65559d8")
-		(property "Reference" "L2"
+		(property "Reference" "D3"
 			(at 283.21 102.87 0)
 			(effects
 				(font
@@ -11514,7 +11513,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 265.684 101.092 0)
 			(effects
 				(font
@@ -11558,7 +11557,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -11706,7 +11705,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76e18094-d0fd-427f-8b4e-976075f516ee")
-		(property "Reference" "L1"
+		(property "Reference" "D2"
 			(at 283.21 82.55 0)
 			(effects
 				(font
@@ -11722,7 +11721,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 265.684 80.772 0)
 			(effects
 				(font
@@ -11766,7 +11765,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -12117,7 +12116,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82d15ecd-29dc-4c3e-8c54-f8ebf83e301d")
-		(property "Reference" "L3"
+		(property "Reference" "D4"
 			(at 283.21 123.19 0)
 			(effects
 				(font
@@ -12133,7 +12132,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 265.684 121.412 0)
 			(effects
 				(font
@@ -12177,7 +12176,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L3")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -13086,7 +13085,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95d88d44-87ed-40be-9279-ce68e4c700fd")
-		(property "Reference" "L7"
+		(property "Reference" "D8"
 			(at 353.06 60.96 0)
 			(effects
 				(font
@@ -13102,7 +13101,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 335.534 59.182 0)
 			(effects
 				(font
@@ -13146,7 +13145,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L7")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -14620,7 +14619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1b112f9-a3cb-452e-97f3-c4037982e3b6")
-		(property "Reference" "L11"
+		(property "Reference" "D12"
 			(at 353.06 143.51 0)
 			(effects
 				(font
@@ -14636,7 +14635,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 335.534 141.732 0)
 			(effects
 				(font
@@ -14680,7 +14679,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L11")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -16631,7 +16630,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edffb146-7a1b-49a0-853c-5fd6ad96d3fb")
-		(property "Reference" "L12"
+		(property "Reference" "D13"
 			(at 353.06 163.83 0)
 			(effects
 				(font
@@ -16647,7 +16646,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MyLibrary:19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
 			(at 335.534 162.052 0)
 			(effects
 				(font
@@ -16691,7 +16690,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "L12")
+					(reference "D13")
 					(unit 1)
 				)
 			)

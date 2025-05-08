@@ -1,4 +1,4 @@
-(footprint "19-C47&slash_RSGHBHC-5V01&slash_2T_EVE-M"
+(footprint "19-C47_RSGHBHC-5V01-2T"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -54,8 +54,8 @@
 	)
 	(attr smd)
 	(fp_circle
-		(center -2.1016 -0.55)
-		(end -2 -0.55)
+		(center 2.032 -1.778)
+		(end 2.1336 -1.778)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -224,30 +224,8 @@
 		(layer "F.Fab")
 		(uuid "1d048a33-cf74-4012-a94b-65a66fccc881")
 	)
-	(fp_arc
-		(start 0.3048 -0.9017)
-		(mid 0 -0.5969)
-		(end -0.3048 -0.9017)
-		(stroke
-			(width 0.0254)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "e080a141-4d75-4428-985f-98b63080ad45")
-	)
-	(fp_circle
-		(center -0.138 -0.55)
-		(end -0.0618 -0.55)
-		(stroke
-			(width 0.0254)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.Fab")
-		(uuid "e525fd90-5b7e-49eb-8bc9-1a399f1aeef6")
-	)
 	(fp_text user "${REFERENCE}"
-		(at 0 -2.54 0)
+		(at 0 -5.08 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "3f7dd468-667c-47eb-9bae-1f2945eec93b")
@@ -259,28 +237,28 @@
 		)
 	)
 	(pad "1" smd rect
-		(at -0.544401 -0.549999)
-		(size 0.8128 0.762)
+		(at 0.55 -0.55)
+		(size 0.7 0.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "7b8a4802-edd7-41a6-9edf-db5501f51a1e")
+		(uuid "26a02966-7570-4b1d-b2db-471e93c40e69")
 	)
 	(pad "2" smd rect
-		(at -0.544401 0.549999)
-		(size 0.8128 0.762)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "8f633f33-717f-48d7-894e-c441af2536ec")
-	)
-	(pad "3" smd rect
-		(at 0.544401 0.549999)
-		(size 0.8128 0.762)
+		(at 0.55 0.55)
+		(size 0.7 0.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "f9c58d2d-3d31-4537-8bd6-49f67ac590ce")
 	)
-	(pad "4" smd rect
-		(at 0.544401 -0.549999)
-		(size 0.8128 0.762)
+	(pad "3" smd rect
+		(at -0.55 0.55)
+		(size 0.7 0.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "26a02966-7570-4b1d-b2db-471e93c40e69")
+		(uuid "8f633f33-717f-48d7-894e-c441af2536ec")
+	)
+	(pad "4" smd rect
+		(at -0.55 -0.55)
+		(size 0.7 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7b8a4802-edd7-41a6-9edf-db5501f51a1e")
 	)
 	(embedded_fonts no)
 )
