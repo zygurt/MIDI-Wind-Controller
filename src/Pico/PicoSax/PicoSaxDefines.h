@@ -41,7 +41,7 @@
 // 39	    VSYS	
 // 40	    VBUS	        5V (USB)
 
-#define BREATH_PIN 31
+#define BREATH_GPIO 26
 
 #define breath_threshold 20 //Breath on/off threshold
 #define breath_scale 0.5 //Breath scaling factor
@@ -49,3 +49,29 @@
 
 #define CC_threshold 4
 #define breath_CC 2
+
+// UART defines
+// By default the stdout UART is `uart0`, so we will use the second one
+#define UART_ID uart1
+#define BAUD_RATE 31250 // MIDI Baud
+#define DATA_BITS 8
+#define STOP_BITS 1
+#define PARITY UART_PARITY_NONE
+
+// Use pins 4 and 5 for UART1
+// Pins can be changed, see the GPIO function select table in the datasheet for information on GPIO assignments
+#define UART_TX_PIN 4
+#define UART_RX_PIN 5
+
+// Global variables
+float breath_at_rest = 0;
+float breath_array[breath_array_len];
+char prev_note = -1;
+bool note_on = 0;
+int breath_raw = 0;
+int prev_breath = 0;
+uint8_t prev_CC = 0;
+uint8_t current_CC = 0;
+uint8_t octave_transpose = 0;
+uint8_t semitone_transpose = 0;
+bool menu = 0;

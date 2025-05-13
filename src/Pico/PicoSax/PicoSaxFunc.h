@@ -5,32 +5,23 @@
 //Need the external global variables defined here too
 //How to bring the pico functions in?
 
-void setupBoard(void)
-{
-    // Pin setup
-    // Digital Pins 0-9 are key inputs
-    // A3 is breath sensor
-    // A5 is Octave buttons [0.33, 1.65, 2.97]V
-    // A7 is MIDI out
-
-    // Button setup
-    //  for (int n = 0; n < 10; n++) {
-    //    pinMode(n, INPUT);
-    //  }
-
-    for (int n = 8; n <= 22; n++)
-    {   
+void setupBoard(void){
+    //Setup onboard LED
+    gpio_init(PICO_DEFAULT_LED_PIN);
+    gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
+    //Setup Instrument buttons
+    for (int n = 8; n <= 22; n++){   
         gpio_init(n);
-        gpio_set_function(n, GPIO_FUNC_XIP); // Standard GPIO
+        gpio_set_dir(n, GPIO_IN);
     }
     // Setup ADC pin for breath input
     adc_init();
-    adc_gpio_init(26);
+    adc_gpio_init(BREATH_GPIO);
     adc_select_input(0);
+
 }
 
-void setupBreath(void)
-{
+void setupBreath(void){
     const float conversion_factor = 3.3f / (1 << 12);
     breath_at_rest = (float)adc_read() * conversion_factor;
 
@@ -42,46 +33,37 @@ void setupBreath(void)
     breath_at_rest = breath_at_rest / 3.3; // Convert to range 0-1
 }
 
-int readBreath(void)
-{
+int readBreath(void){
     const float conversion_factor = 3.3f / (1 << 12);
     // breath_array
     float breath = 0;
     int n;
     int breath_sum = 0, breath_filt = 0; //, breath_raw;
     // Read the breath sensor value
-    //  breath = (float(analogRead(BREATH_PIN))/1024-breath_at_rest); //Remove atmospheric pressure
-    //  breath_raw = analogRead(BREATH_PIN);
     breath = (float)adc_read() * conversion_factor;
-    // Remove initial offset
+    // Remove initial offset and scale to 0-1
     //(x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min (Arduino map() function)
     breath = (breath - breath_at_rest) * (1 - 0) / (1 - breath_at_rest) + 0;
-    // breath = map(analogRead(BREATH_PIN), breath_at_rest * 1024, 1024, 0, 1024);
-    // breath = breath / 1024;
+
     // Scale the breath input
-    if (breath < 0)
-    {
+    if (breath < 0){
         breath = -1 * pow(-1 * breath, breath_scale);
-    }
-    else
-    {
+    }else {
         breath = pow(breath, breath_scale);
     }
-    breath_raw = min(127, max(0, int(breath * 127)));
+    breath_raw = min(127, max(0, (uint16_t)(breath * 127)));
 
     // breath_array code
     //  Using pointers because I couldn't get normal array indexing to work
     // This should be updated to use a ring buffer
     //  Shift values right through the breath array
-    for (n = 0; n < breath_array_len - 1; n++)
-    {
+    for (n = 0; n < breath_array_len - 1; n++){
         *(breath_array + n) = *(breath_array + (n + 1));
     }
     // Add new breath value
     *(breath_array + breath_array_len - 1) = breath_raw;
     // Average the breath value array
-    for (n = 0; n < breath_array_len; n++)
-    {
+    for (n = 0; n < breath_array_len; n++){
         breath_sum = breath_sum + *(breath_array + n);
     }
     breath_filt = breath_sum / breath_array_len;
@@ -93,18 +75,19 @@ uint16_t readButtons(void){
     const uint8_t read_order[13] = {14, 12, 11, 10, 9, 8, 15, 17, 18, 19, 20, 21, 22}; //Order to Read GPIO
     uint8_t n = 0;
     uint16_t note_buttons = 0, note_midi = 0;
-    
+    // Get Buttons value
     for (n = 0; n < 13; n++){
         //This could be updated to gpio_get_all and then a mask and shift
         note_buttons = note_buttons | (gpio_get(read_order[n]) << n); 
     }
-
+    
+    //Check to see if going into menu
     if (note_buttons == 4128 && menu == 0){
         // Enter Menu mode
         menu = 1;
         while (gpio_get(8) || gpio_get(22)); // Hold while either Spr and Ctrl buttons are pressed
     }
-
+    //Check to see if leaving menu
     if ((note_buttons == 4096 && menu == 1)){
         // Leave Menu mode
         menu = 0;
@@ -113,6 +96,8 @@ uint16_t readButtons(void){
 
     if (menu == 1){
         //Menu control
+        //The menu might need to change, as the buttons are more about combinations at the moment
+        //rather then entering, changing settings and the exiting.
         switch (note_buttons){
         case 4160:
             // Bb Transpose

@@ -39,6 +39,7 @@
     "files.associations": {
         "cstddef": "c",
         "cstdint": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "picosaxdefines.h": "c"
     }
 }
