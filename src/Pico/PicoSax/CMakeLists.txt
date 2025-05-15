@@ -59,7 +59,7 @@ target_include_directories(PicoSax PRIVATE
 # Add any user requested libraries
 target_link_libraries(PicoSax 
         hardware_pio
+        hardware_adc
         )
 
 pico_add_extra_outputs(PicoSax)
-

@@ -40,6 +40,7 @@
         "cstddef": "c",
         "cstdint": "c",
         "stdio.h": "c",
-        "picosaxdefines.h": "c"
+        "picosaxdefines.h": "c",
+        "math.h": "c"
     }
 }

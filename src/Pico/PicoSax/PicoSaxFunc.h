@@ -14,10 +14,7 @@ void setupBoard(void){
         gpio_init(n);
         gpio_set_dir(n, GPIO_IN);
     }
-    // Setup ADC pin for breath input
-    adc_init();
-    adc_gpio_init(BREATH_GPIO);
-    adc_select_input(0);
+    
 
 }
 
@@ -51,7 +48,7 @@ int readBreath(void){
     }else {
         breath = pow(breath, breath_scale);
     }
-    breath_raw = min(127, max(0, (uint16_t)(breath * 127)));
+    breath_raw = fmin(127, fmax(0, (uint16_t)(breath * 127)));
 
     // breath_array code
     //  Using pointers because I couldn't get normal array indexing to work

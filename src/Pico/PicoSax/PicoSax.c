@@ -3,6 +3,8 @@
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
 #include "hardware/uart.h"
+#include "hardware/gpio.h"
+#include "hardware/adc.h"
 
 
 #include "PicoSaxDefines.h"
@@ -25,6 +27,10 @@ int main()
     stdio_init_all();
     // PicoSax Setup
     setupBoard();
+    // Setup ADC pin for breath input
+    adc_init();
+    adc_gpio_init(BREATH_GPIO);
+    adc_select_input(0);
     setupBreath();
     // PIO Blinking example
     // PIO pio = pio0;
@@ -60,11 +66,11 @@ int main()
 
         int breath_filt;
         breath_filt = readBreath();
-        printf(breath_filt);
+        printf("%d\t",breath_filt);
         // Set CC2 to breath value
         // Also add an LED to give visual feedback in the future
-        current_CC = min(127, max(0, breath_raw));
-        if (abs(current_CC - prev_CC) > CC_threshold){
+        current_CC = fmin(127, fmax(0, breath_raw));
+        if (fabs(current_CC - prev_CC) > CC_threshold){
             // USBcontrolChange(0, breath_CC, min(127, max(0, breath_raw))); // Set the value of controller 2 (breath) on channel 0 to breath value
             prev_CC = current_CC;
         }
@@ -92,7 +98,7 @@ int main()
             //USBnoteOn(0, note_midi, min(127, max(0, breath_raw))); // min(127,max(0,int(breath*127))));   // Channel 0, middle C, normal velocity
             // MidiUSB.flush();  //Moved into the noteOn function
             note_on = 1;
-            printf(note_midi);
+            printf("%d\n",note_midi);
             prev_note = note_midi;
         }
         prev_breath = breath_filt;
