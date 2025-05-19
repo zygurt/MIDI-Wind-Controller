@@ -1,9 +1,4 @@
-
-// #include "MIDIUSB.h"  //TODO Write MIDI functions
 #include "pico/stdlib.h"
-
-//Need the external global variables defined here too
-//How to bring the pico functions in?
 
 void setupBoard(void){
     //Setup onboard LED
@@ -19,28 +14,26 @@ void setupBoard(void){
 }
 
 void setupBreath(void){
-    const float conversion_factor = 3.3f / (1 << 12);
-    breath_at_rest = (float)adc_read() * conversion_factor;
+    //const float conversion_factor = 3.3f / (1 << 12);
+    breath_at_rest = adc_read();
 
     int n = 0, num_run = 100;
-    for (n = 0; n < num_run; n++)
-    {
-        breath_at_rest = (breath_at_rest + (float)adc_read() * conversion_factor) / 2;
+    for (n = 0; n < num_run; n++){
+        breath_at_rest = (breath_at_rest + (float)adc_read()) / 2;
     }
-    breath_at_rest = breath_at_rest / 3.3; // Convert to range 0-1
+    // Final value is in 0-4096 range
 }
 
-int readBreath(void){
+uint8_t readBreath(void){
     const float conversion_factor = 3.3f / (1 << 12);
     // breath_array
     float breath = 0;
     int n;
-    int breath_sum = 0, breath_filt = 0; //, breath_raw;
-    // Read the breath sensor value
-    breath = (float)adc_read() * conversion_factor;
+    uint16_t breath_sum = 0, breath_filt = 0; //, breath_raw;
+    // Read the breath sensor value - 12bit
+    breath = (float)adc_read();
     // Remove initial offset and scale to 0-1
-    //(x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min (Arduino map() function)
-    breath = (breath - breath_at_rest) * (1 - 0) / (1 - breath_at_rest) + 0;
+    breath = (breath - breath_at_rest) / (4096 - breath_at_rest);
 
     // Scale the breath input
     if (breath < 0){
@@ -48,17 +41,18 @@ int readBreath(void){
     }else {
         breath = pow(breath, breath_scale);
     }
-    breath_raw = fmin(127, fmax(0, (uint16_t)(breath * 127)));
+    breath_raw_midi = fmin(127, fmax(0, (uint8_t)(breath * 127)));
 
     // breath_array code
     //  Using pointers because I couldn't get normal array indexing to work
     // This should be updated to use a ring buffer
+
     //  Shift values right through the breath array
     for (n = 0; n < breath_array_len - 1; n++){
         *(breath_array + n) = *(breath_array + (n + 1));
     }
     // Add new breath value
-    *(breath_array + breath_array_len - 1) = breath_raw;
+    *(breath_array + breath_array_len - 1) = breath_raw_midi;
     // Average the breath value array
     for (n = 0; n < breath_array_len; n++){
         breath_sum = breath_sum + *(breath_array + n);
@@ -309,11 +303,30 @@ uint16_t readButtons(void){
 //   MidiUSB.flush(); //This forces the note to be sent
 // }
 
+void MIDInoteOn(uint8_t channel, uint8_t pitch, uint8_t velocity) {
+    //Next update should sanitise the msg_type_byte for each input.
+    uint8_t command = 0x9;
+    uint8_t msg_type_byte;
+    msg_type_byte = (command << 4) | (channel -1);
+    uart_puts(UART_ID, &msg_type_byte);
+    uart_puts(UART_ID, &pitch);
+    uart_puts(UART_ID, &velocity);
+}
+
 // void USBnoteOff(byte channel, byte pitch, byte velocity) {
 //   midiEventPacket_t noteOff = {0x08, 0x80 | channel, pitch, velocity};
 //   MidiUSB.sendMIDI(noteOff);
 //   MidiUSB.flush(); //This forces the note to be sent
 // }
+
+void MIDInoteOff(uint8_t channel, uint8_t pitch, uint8_t velocity) {
+    uint8_t command = 0x8;
+    uint8_t msg_type_byte;
+    msg_type_byte = (command << 4) | (channel -1);
+    uart_puts(UART_ID, &msg_type_byte);
+    uart_puts(UART_ID, &pitch);
+    uart_puts(UART_ID, &velocity);
+}
 
 // // First parameter is the event type (0x0B = control change).
 // // Second parameter is the event type, combined with the channel.
@@ -326,6 +339,15 @@ uint16_t readButtons(void){
 //   MidiUSB.flush(); //This forces the note to be sent
 // }
 
+void MIDICC(uint8_t channel, uint8_t control, uint8_t value){
+    uint8_t command = 0xB;
+    uint8_t msg_type_byte;
+    msg_type_byte = (command << 4) | (channel -1);
+    uart_puts(UART_ID, &msg_type_byte);
+    uart_puts(UART_ID, &control);
+    uart_puts(UART_ID, &value);
+}
+
 // void USB_PANIC(void) {
 //   int n = 0, k = 0;
 //   for (k = 0; k < 16; k++) {
@@ -336,3 +358,9 @@ uint16_t readButtons(void){
 //     }
 //   }
 // }
+
+void MIDIpanic(void){
+    // Use the MIDI panic message, rather than sending note off for all of the notes.
+    uint8_t msg = 0xFF;
+    uart_puts(UART_ID, &msg);
+}

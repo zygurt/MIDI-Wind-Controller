@@ -68,7 +68,7 @@ float breath_at_rest = 0;
 float breath_array[breath_array_len];
 char prev_note = -1;
 bool note_on = 0;
-int breath_raw = 0;
+uint8_t breath_raw_midi = 0;
 int prev_breath = 0;
 uint8_t prev_CC = 0;
 uint8_t current_CC = 0;
