@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="102.0mm"
+   height="162.0mm"
+   viewBox="0 0 102.0 162.0"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Bottom-Body.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs5" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.4584748"
+     inkscape:cx="83.306205"
+     inkscape:cy="306.14173"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <g
+     id="Body"
+     transform="translate(1.000000,161.000000) scale(1,-1)"
+     style="stroke:#ff0000;stroke-width:0.2;stroke-dasharray:none;fill:none">
+    <path
+       id="Body_f0000"
+       d="M 100.0 0.0 L 0.0 0.0 L 0.0 0.0 L 100.0 0.0 L 100.0 0.0 Z "
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000" />
+    <path
+       id="Body_f0001"
+       d="M 0.0 0.0 L 0.0 160.0 L 0.0 160.0 L 0.0 0.0 L 0.0 0.0 Z "
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000" />
+    <path
+       id="Body_f0002"
+       d="M 100.0 160.0 L 100.0 0.0 L 100.0 0.0 L 100.0 160.0 L 100.0 160.0 Z "
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000" />
+    <circle
+       cx="10.0"
+       cy="30.0"
+       r="1.55"
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;stroke:#ff0000"
+       id="circle1" />
+    <path
+       id="Body_f0005"
+       d="M 0.0 160.0 L 100.0 160.0 L 100.0 160.0 L 0.0 160.0 L 0.0 160.0 Z "
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000" />
+    <circle
+       cx="10.0"
+       cy="30.0"
+       r="1.55"
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;stroke:#ff0000"
+       id="circle2" />
+    <circle
+       cx="94.0"
+       cy="27.0"
+       r="1.55"
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;stroke:#ff0000"
+       id="circle3" />
+    <path
+       id="Body_f0008"
+       d="M 37.999999999999986 133.0 L 37.999999999999986 112.99999999999999 L 37.999999999999986 112.99999999999999 L 37.999999999999986 133.0 L 37.999999999999986 133.0 Z "
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000" />
+    <path
+       id="Body_f0009"
+       d="M 17.99999999999999 133.0 L 37.999999999999986 133.0 L 37.999999999999986 133.0 L 17.99999999999999 133.0 L 17.99999999999999 133.0 Z "
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000" />
+    <path
+       id="Body_f0010"
+       d="M 17.99999999999999 112.99999999999999 L 17.99999999999999 133.0 L 17.99999999999999 133.0 L 17.99999999999999 112.99999999999999 L 17.99999999999999 112.99999999999999 Z "
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000" />
+    <path
+       id="Body_f0011"
+       d="M 37.999999999999986 112.99999999999999 L 17.99999999999999 112.99999999999999 L 17.99999999999999 112.99999999999999 L 37.999999999999986 112.99999999999999 L 37.999999999999986 112.99999999999999 Z "
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000" />
+    <circle
+       cx="35.0"
+       cy="139.0"
+       r="1.55"
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;stroke:#ff0000"
+       id="circle4" />
+    <path
+       id="Body_f0013"
+       d="M 82.0 133.0 L 82.0 113.0 L 82.0 113.0 L 82.0 133.0 L 82.0 133.0 Z "
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000" />
+    <path
+       id="Body_f0014"
+       d="M 62.0 133.0 L 82.0 133.0 L 82.0 133.0 L 62.0 133.0 L 62.0 133.0 Z "
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000" />
+    <path
+       id="Body_f0015"
+       d="M 62.0 113.0 L 62.0 133.0 L 62.0 133.0 L 62.0 113.0 L 62.0 113.0 Z "
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000" />
+    <path
+       id="Body_f0016"
+       d="M 82.0 113.0 L 62.0 113.0 L 62.0 113.0 L 82.0 113.0 L 82.0 113.0 Z "
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000" />
+    <circle
+       cx="65.0"
+       cy="139.0"
+       r="1.55"
+       stroke="#191919"
+       stroke-width="0.7 px"
+       style="stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:none;stroke:#ff0000"
+       id="circle5" />
+    <title
+       id="title5">b'Body'</title>
+  </g>
+</svg>

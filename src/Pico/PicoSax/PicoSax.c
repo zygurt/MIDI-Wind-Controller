@@ -22,9 +22,10 @@ int main()
     adc_select_input(0);
     setupBreath();
     // Set up our UART
+    gpio_set_function(UART_TX_PIN, UART_FUNCSEL_NUM(uart0, 0));
+    gpio_set_function(UART_RX_PIN, UART_FUNCSEL_NUM(uart0, 1));
     uart_init(UART_ID, BAUD_RATE);
-    gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
-    gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
+    
 
     while (true)
     {
@@ -35,22 +36,24 @@ int main()
         //printf("%d\t",breath_filt);
         // Set CC2 to breath value
         current_CC = breath_raw_midi;
-        if (fabs(current_CC - prev_CC) > CC_threshold){
-             // Set the value of controller 2 (breath) on channel 0 to breath value
-            MIDICC(0,breath_CC, breath_raw_midi);
-            prev_CC = current_CC;
-        }
+        // if (fabs(current_CC - prev_CC) > CC_threshold){
+        //      // Set the value of controller 2 (breath) on channel 0 to breath value
+        //     MIDICC(0,breath_CC, breath_raw_midi);
+        //     prev_CC = current_CC;
+        // }
 
         //-----------Sending MIDI message if needed----------
         bool retrigger_flag = 0;
-        if (breath_filt < breath_threshold){
+        if (breath_filt < breath_threshold && note_on == 1){
             note_on = 0;
+            gpio_put(PICO_DEFAULT_LED_PIN, 0);
             MIDInoteOff(0, prev_note, breath_raw_midi);
             retrigger_flag = 0;
         }
 
         if (breath_filt > breath_threshold){
             retrigger_flag = 1;
+            gpio_put(PICO_DEFAULT_LED_PIN, 1);
         }
 
         if ((note_midi != prev_note && note_midi > 0 && note_midi < 128) || retrigger_flag && !note_on){
@@ -61,7 +64,8 @@ int main()
             // turn on new note
             MIDInoteOn(0, note_midi, breath_raw_midi);
             note_on = 1;
-            //printf("%d\n",note_midi);
+            uart_puts(UART_ID, &note_midi);
+            printf("%d\n",note_midi);
             prev_note = note_midi;
         }
         prev_breath = breath_filt;

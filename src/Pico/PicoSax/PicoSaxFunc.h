@@ -89,6 +89,7 @@ uint16_t readButtons(void){
         //Menu control
         //The menu might need to change, as the buttons are more about combinations at the moment
         //rather then entering, changing settings and the exiting.
+        printf("menu\n");
         switch (note_buttons){
         case 4160:
             // Bb Transpose

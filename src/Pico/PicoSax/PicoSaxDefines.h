@@ -52,16 +52,16 @@
 
 // UART defines
 // By default the stdout UART is `uart0`, so we will use the second one
-#define UART_ID uart1
-#define BAUD_RATE 31250 // MIDI Baud
+#define UART_ID uart0  //uart1
+#define BAUD_RATE 115200// 31250 // MIDI Baud
 #define DATA_BITS 8
 #define STOP_BITS 1
 #define PARITY UART_PARITY_NONE
 
 // Use pins 4 and 5 for UART1
 // Pins can be changed, see the GPIO function select table in the datasheet for information on GPIO assignments
-#define UART_TX_PIN 4
-#define UART_RX_PIN 5
+#define UART_TX_PIN 0 //4
+#define UART_RX_PIN 1 //5
 
 // Global variables
 float breath_at_rest = 0;
