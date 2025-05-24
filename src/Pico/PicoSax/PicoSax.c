@@ -56,7 +56,8 @@ int main()
             gpio_put(PICO_DEFAULT_LED_PIN, 1);
         }
 
-        if ((note_midi != prev_note && note_midi > 0 && note_midi < 128) || retrigger_flag && !note_on){
+        if ((retrigger_flag && (note_midi != prev_note && note_midi > 0 && note_midi < 128)) || retrigger_flag && !note_on){
+            //Breath and new note || Breath and same note
             // turn off previous note
             MIDInoteOff(0, prev_note, breath_raw_midi);
             note_on = 0;
@@ -65,7 +66,9 @@ int main()
             MIDInoteOn(0, note_midi, breath_raw_midi);
             note_on = 1;
             uart_puts(UART_ID, &note_midi);
-            printf("%d\n",note_midi);
+            if(VERBOSE){
+                printf("%d\n",note_midi);
+            }
             prev_note = note_midi;
         }
         prev_breath = breath_filt;

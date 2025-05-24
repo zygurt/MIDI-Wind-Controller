@@ -58,7 +58,7 @@ uint8_t readBreath(void){
         breath_sum = breath_sum + *(breath_array + n);
     }
     breath_filt = breath_sum / breath_array_len;
-
+    //printf("%d\n",breath_filt);
     return breath_filt;
 }
 
@@ -73,44 +73,64 @@ uint16_t readButtons(void){
     }
     
     //Check to see if going into menu
-    if (note_buttons == 4128 && menu == 0){
+    if (note_buttons == 4096 && menu == 0){
         // Enter Menu mode
         menu = 1;
-        while (gpio_get(8) || gpio_get(22)); // Hold while either Spr and Ctrl buttons are pressed
+        if(VERBOSE){
+                printf("Enter Menu\n");
+            }
+        while (gpio_get(22)); // Hold while Ctrl button is pressed
     }
     //Check to see if leaving menu
-    if ((note_buttons == 4096 && menu == 1)){
+    if ((note_buttons == 32 && menu == 1)){
         // Leave Menu mode
         menu = 0;
-        while (gpio_get(22)); // Hold while Ctrl button is pressed
+        if(VERBOSE){
+                printf("Exit Menu\n");
+            }
+        while (gpio_get(8)); // Hold while Spr button is pressed
     }
 
     if (menu == 1){
         //Menu control
         //The menu might need to change, as the buttons are more about combinations at the moment
         //rather then entering, changing settings and the exiting.
-        printf("menu\n");
+        if (gpio_get(13)){
+            note_buttons = 8192;
+        }
+        if (gpio_get(16)){
+            note_buttons = 16384;
+        }
         switch (note_buttons){
-        case 4160:
+        case 64:
             // Bb Transpose
+            if(VERBOSE){
+                printf("Bb Transpose\n");
+            }
             octave_transpose = 0;
             semitone_transpose = -2;
             note_midi = 0;
-            while (gpio_get(15) || gpio_get(22)); // Hold while button is pressed
+            while (gpio_get(15)); // Hold while button is pressed
             break;
-        case 4100:
+        case 2048:
             // Concert Pitch
+            if(VERBOSE){
+                printf("C Transpose\n");
+            }
             octave_transpose = 0;
             semitone_transpose = 0;
             note_midi = 0;
-            while (gpio_get(11) || gpio_get(22)); // Hold while button is pressed
+            while (gpio_get(21)); // Hold while button is pressed
             break;
-        case 5120:
+        case 1024:
             // Eb Transpose
+            if(VERBOSE){
+                printf("Eb Transpose\n");
+            }
             octave_transpose = 0;
             semitone_transpose = 3;
             note_midi = 0;
-            while (gpio_get(20) || gpio_get(22)); // Hold while button is pressed
+            while (gpio_get(20)); // Hold while button is pressed
             break;
         // case 8:
         //     // Semitone Up
@@ -126,17 +146,23 @@ uint16_t readButtons(void){
         //     while (digitalRead(8))
         //         ; // Hold while button is pressed
         //     break;
-        case 4128:
+        case 8192:
             // Octave Up
-            octave_transpose++;
+            if(VERBOSE){
+                printf("Octave Up\n");
+            }
+            octave_move++;
             note_midi = 0;
-            while (gpio_get(8) || gpio_get(22)); // Hold while button is pressed
+            while (gpio_get(13)); // Hold while button is pressed
             break;
-        case 6144:
+        case 16384:
             // Octave Down
-            octave_transpose--;
+            if(VERBOSE){
+                printf("Octave Down\n");
+            }
+            octave_move--;
             note_midi = 0;
-            while (gpio_get(21) || gpio_get(22)); // Hold while button is pressed
+            while (gpio_get(16)); // Hold while button is pressed
             break;
         default:
             note_midi = 0;
@@ -189,6 +215,10 @@ uint16_t readButtons(void){
             // A# (G# Alternative)
             note_midi = 46;
             break;
+        case 134:
+            //A# another alternative
+            note_midi = 46;
+            break;
         case 6:
             // A
             note_midi = 45;
@@ -236,6 +266,10 @@ uint16_t readButtons(void){
         case 1950:
             // D# (G# Alternative)
             note_midi = 39;
+            break;
+        case 1:
+            // D Up
+            note_midi = 50;
             break;
         case 910:
             // D
@@ -286,7 +320,7 @@ uint16_t readButtons(void){
                 break;
             }
 
-            note_midi += (octave_transpose*12)+semitone_transpose;
+            note_midi += ((octave_move+octave_transpose)*12)+semitone_transpose;
         }
     }
     return note_midi;

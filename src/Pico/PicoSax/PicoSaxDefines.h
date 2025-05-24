@@ -41,6 +41,7 @@
 // 39	    VSYS	
 // 40	    VBUS	        5V (USB)
 
+#define VERBOSE 1
 #define BREATH_GPIO 26
 
 #define breath_threshold 20 //Breath on/off threshold
@@ -66,12 +67,13 @@
 // Global variables
 float breath_at_rest = 0;
 float breath_array[breath_array_len];
-char prev_note = -1;
+char prev_note = 0;
 bool note_on = 0;
 uint8_t breath_raw_midi = 0;
 int prev_breath = 0;
 uint8_t prev_CC = 0;
 uint8_t current_CC = 0;
-uint8_t octave_transpose = 0;
+int8_t octave_transpose = 0;
+int8_t octave_move = 0;
 uint8_t semitone_transpose = 0;
 bool menu = 0;
