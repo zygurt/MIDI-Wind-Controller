@@ -340,12 +340,12 @@ uint16_t readButtons(void){
 
 void MIDInoteOn(uint8_t channel, uint8_t pitch, uint8_t velocity) {
     //Next update should sanitise the msg_type_byte for each input.
-    uint8_t command = 0x9;
+    uint8_t command = 0x90;
     uint8_t msg_type_byte;
-    msg_type_byte = (command << 4) | (channel -1);
-    uart_puts(UART_ID, &msg_type_byte);
-    uart_puts(UART_ID, &pitch);
-    uart_puts(UART_ID, &velocity);
+    //msg_type_byte = (command << 4) | (channel -1);
+    uart_putc_raw(UART_ID, (char)command);
+    uart_putc_raw(UART_ID, (char)pitch);
+    uart_putc_raw(UART_ID, (char)velocity);
 }
 
 // void USBnoteOff(byte channel, byte pitch, byte velocity) {
@@ -355,12 +355,12 @@ void MIDInoteOn(uint8_t channel, uint8_t pitch, uint8_t velocity) {
 // }
 
 void MIDInoteOff(uint8_t channel, uint8_t pitch, uint8_t velocity) {
-    uint8_t command = 0x8;
+    uint8_t command = 0x80;
     uint8_t msg_type_byte;
-    msg_type_byte = (command << 4) | (channel -1);
-    uart_puts(UART_ID, &msg_type_byte);
-    uart_puts(UART_ID, &pitch);
-    uart_puts(UART_ID, &velocity);
+    //msg_type_byte = (command << 4) | (channel -1);
+    uart_putc_raw(UART_ID, (char)command);
+    uart_putc_raw(UART_ID, (char)pitch);
+    uart_putc_raw(UART_ID, (char)velocity);
 }
 
 // // First parameter is the event type (0x0B = control change).
@@ -378,9 +378,9 @@ void MIDICC(uint8_t channel, uint8_t control, uint8_t value){
     uint8_t command = 0xB;
     uint8_t msg_type_byte;
     msg_type_byte = (command << 4) | (channel -1);
-    uart_puts(UART_ID, &msg_type_byte);
-    uart_puts(UART_ID, &control);
-    uart_puts(UART_ID, &value);
+    uart_putc_raw(UART_ID, (char)msg_type_byte);
+    uart_putc_raw(UART_ID, (char)control);
+    uart_putc_raw(UART_ID, (char)value);
 }
 
 // void USB_PANIC(void) {
@@ -397,5 +397,5 @@ void MIDICC(uint8_t channel, uint8_t control, uint8_t value){
 void MIDIpanic(void){
     // Use the MIDI panic message, rather than sending note off for all of the notes.
     uint8_t msg = 0xFF;
-    uart_puts(UART_ID, &msg);
+    uart_putc_raw(UART_ID, (char)msg);
 }

@@ -5,15 +5,36 @@
 #include "hardware/uart.h"
 #include "hardware/gpio.h"
 #include "hardware/adc.h"
+//#include "pico/binary_info.h"
 
 
 #include "PicoSaxDefines.h"
 #include "PicoSaxFunc.h"
 
+//#include "bsp/board.h"
+//#include "tusb.h"
+
+// void midi_task(void);
+
+// // Invoked when usb bus is suspended
+// // remote_wakeup_en : if host allow us  to perform remote wakeup
+// // Within 7ms, device must draw an average of current less than 2.5 mA from bus
+// void tud_suspend_cb(bool remote_wakeup_en)
+// {
+//   (void) remote_wakeup_en;
+//   blink_interval_ms = BLINK_SUSPENDED;
+// }
+
+// // Invoked when usb bus is resumed
+// void tud_resume_cb(void)
+// {
+//   blink_interval_ms = BLINK_MOUNTED;
+// }
 
 int main()
 {
     stdio_init_all();
+    // tusb_init();
     // PicoSax Setup
     setupBoard();
     // Setup ADC pin for breath input
@@ -47,7 +68,13 @@ int main()
         if (breath_filt < breath_threshold && note_on == 1){
             note_on = 0;
             gpio_put(PICO_DEFAULT_LED_PIN, 0);
-            MIDInoteOff(0, prev_note, breath_raw_midi);
+            MIDInoteOff(1, prev_note, breath_raw_midi);
+
+            // msg[0] = 0x80;                    // Note Off - Channel 1
+            // msg[1] = prev_note; // Note Number
+            // msg[2] = 0;                       // Velocity
+            // tud_midi_n_stream_write(0, 0, msg, 3);
+
             retrigger_flag = 0;
         }
 
@@ -57,21 +84,31 @@ int main()
         }
 
         if ((retrigger_flag && (note_midi != prev_note && note_midi > 0 && note_midi < 128)) || retrigger_flag && !note_on){
-            //Breath and new note || Breath and same note
-            // turn off previous note
-            MIDInoteOff(0, prev_note, breath_raw_midi);
-            note_on = 0;
-
+            if(note_midi != prev_note){
+                //Breath and new note || Breath and same note
+                // turn off previous note
+                // msg[0] = 0x80;                    // Note Off - Channel 1
+                // msg[1] = prev_note; // Note Number
+                // msg[2] = 0;                       // Velocity
+                // tud_midi_n_stream_write(0, 0, msg, 3);
+                MIDInoteOff(1, prev_note, breath_raw_midi);
+                note_on = 0;
+            }
             // turn on new note
-            MIDInoteOn(0, note_midi, breath_raw_midi);
+            // msg[0] = 0x90;                    // Note On - Channel 1
+            // msg[1] = note_midi;                // Note Number
+            // msg[2] = breath_raw_midi;           // Velocity
+            // tud_midi_n_stream_write(0, 0, msg, 3);
+
+            MIDInoteOn(1, note_midi, breath_raw_midi);
             note_on = 1;
-            uart_puts(UART_ID, &note_midi);
+            //uart_puts(UART_ID, &note_midi);
             if(VERBOSE){
                 printf("%d\n",note_midi);
             }
             prev_note = note_midi;
         }
         prev_breath = breath_filt;
-        sleep_ms(2); // Delay to reduce amount of midi data
+        sleep_ms(10); // Delay to reduce amount of midi data
     }
 }

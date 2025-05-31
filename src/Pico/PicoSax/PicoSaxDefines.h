@@ -41,7 +41,7 @@
 // 39	    VSYS	
 // 40	    VBUS	        5V (USB)
 
-#define VERBOSE 1
+#define VERBOSE 0
 #define BREATH_GPIO 26
 
 #define breath_threshold 20 //Breath on/off threshold
@@ -54,7 +54,7 @@
 // UART defines
 // By default the stdout UART is `uart0`, so we will use the second one
 #define UART_ID uart0  //uart1
-#define BAUD_RATE 115200// 31250 // MIDI Baud
+#define BAUD_RATE 31250// 31250 MIDI Baud // 115200 USB BAUD
 #define DATA_BITS 8
 #define STOP_BITS 1
 #define PARITY UART_PARITY_NONE
