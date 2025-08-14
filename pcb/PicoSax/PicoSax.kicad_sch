@@ -1663,7 +1663,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 0 0 0)
+				(at 0 4.826 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1707,14 +1707,52 @@
 			)
 			(symbol "Perfboard_0_1"
 				(rectangle
-					(start -2.54 1.27)
-					(end 5.08 -5.08)
+					(start -2.54 3.81)
+					(end 12.7 -5.08)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "Perfboard_1_1"
+				(pin input line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "Top_Rail"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 -3.81 180)
+					(length 2.54)
+					(name "Bottom_Rail"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -6296,6 +6334,72 @@
 	)
 	(symbol
 		(lib_id "PicoSax:GND")
+		(at 201.93 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c458265-fa6d-4965-8655-cfe87420647f")
+		(property "Reference" "#PWR091"
+			(at 201.93 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.93 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 201.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb6fd5b6-8335-416a-aa48-e7206fd31755")
+		)
+		(instances
+			(project ""
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:GND")
 		(at 373.38 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6949,6 +7053,72 @@
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
 					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:+3V3")
+		(at 181.61 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1bdd4e91-e31c-4a2b-9915-1398d00153fc")
+		(property "Reference" "#PWR090"
+			(at 181.61 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 181.61 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 181.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f530d2a-9d85-43b4-b487-34373f2ca90f")
+		)
+		(instances
+			(project ""
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -12451,16 +12621,16 @@
 	)
 	(symbol
 		(lib_id "PicoSax:Perfboard")
-		(at 180.34 62.23 0)
+		(at 186.69 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87fa483d-c955-431e-98e2-e9a205a498ba")
 		(property "Reference" "U1"
-			(at 186.69 63.4999 0)
+			(at 193.04 57.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12469,25 +12639,24 @@
 			)
 		)
 		(property "Value" "Perfboard"
-			(at 186.69 65.405 0)
+			(at 193.04 59.055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 			)
 		)
-		(property "Footprint" "MyLibrary:Perfboard 12x20"
-			(at 180.34 62.23 0)
+		(property "Footprint" "MyLibrary:Perfboard 10x20"
+			(at 186.69 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 62.23 0)
+			(at 186.69 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12496,13 +12665,19 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 62.23 0)
+			(at 186.69 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "2"
+			(uuid "35f0ce69-bf7d-46e2-bd01-0ee3e96c8e0b")
+		)
+		(pin "1"
+			(uuid "45c5c31d-bf8c-45ab-b819-4ded63d753ff")
 		)
 		(instances
 			(project ""

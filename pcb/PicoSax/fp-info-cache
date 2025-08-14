@@ -1,4 +1,4 @@
-24789613409141075
+24791382992161570
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -68565,12 +68565,19 @@ Omron B3K L13L
 4
 2
 MyLibrary
+Perfboard 10x20
+
+
+0
+200
+2
+MyLibrary
 Perfboard 12x20
 
 
 0
 240
-0
+2
 MyLibrary
 Perfboard 12x24
 
