@@ -15,56 +15,55 @@ if(WIN32)
 else()
     set(USERHOME $ENV{HOME})
 endif()
-set(sdkVersion 2.1.1)
+set(sdkVersion 2.2.0)
 set(toolchainVersion 14_2_Rel1)
-set(picotoolVersion 2.1.1)
+set(picotoolVersion 2.2.0-a4)
 set(picoVscode ${USERHOME}/.pico-sdk/cmake/pico-vscode.cmake)
 if (EXISTS ${picoVscode})
     include(${picoVscode})
 endif()
 # ====================================================================================
-set(PICO_BOARD pico CACHE STRING "Board type")
+set(PICO_BOARD pico_w CACHE STRING "Board type")
 
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
 
-project(PicoSax C CXX ASM)
+project(PicoUSBMIDI C CXX ASM)
 
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(PicoSax PicoSax.c usb_descriptors.c)
+add_executable(PicoUSBMIDI PicoUSBMIDI.c usb_descriptors.c)
 
-pico_set_program_name(PicoSax "PicoSax")
-pico_set_program_version(PicoSax "0.1")
+pico_enable_stdio_usb(PicoUSBMIDI 0) #USBMIDI
+pico_enable_stdio_uart(PicoUSBMIDI 1) #USBMIDI
 
-pico_enable_stdio_usb(PicoSax 0)
-pico_enable_stdio_uart(PicoSax 1)
+pico_set_program_name(PicoUSBMIDI "PicoUSBMIDI")
+pico_set_program_version(PicoUSBMIDI "0.1")
 
 # Generate PIO header
-pico_generate_pio_header(PicoSax ${CMAKE_CURRENT_LIST_DIR}/blink.pio)
+pico_generate_pio_header(PicoUSBMIDI ${CMAKE_CURRENT_LIST_DIR}/blink.pio)
 
 # Modify the below lines to enable/disable output over UART/USB
-pico_enable_stdio_uart(PicoSax 0)
-pico_enable_stdio_usb(PicoSax 0)
+pico_enable_stdio_uart(PicoUSBMIDI 1)
+pico_enable_stdio_usb(PicoUSBMIDI 0)
 
 # Add the standard library to the build
-target_link_libraries(PicoSax
+target_link_libraries(PicoUSBMIDI
         pico_stdlib)
 
 # Add the standard include files to the build
-target_include_directories(PicoSax PRIVATE
+target_include_directories(PicoUSBMIDI PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
 )
 
 # Add any user requested libraries
-target_link_libraries(PicoSax 
+target_link_libraries(PicoUSBMIDI 
         hardware_pio
-        hardware_adc
         tinyusb_device
         tinyusb_board
         )
 
-pico_add_extra_outputs(PicoSax)
+pico_add_extra_outputs(PicoUSBMIDI)
