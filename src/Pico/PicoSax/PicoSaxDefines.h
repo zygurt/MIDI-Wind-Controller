@@ -47,6 +47,7 @@
 #define breath_threshold 20 //Breath on/off threshold
 #define breath_scale 0.5 //Breath scaling factor
 #define breath_array_len 8
+#define NEW_NOTE_TIMER 250000 //uS
 
 #define CC_threshold 4
 #define breath_CC 2
@@ -73,7 +74,7 @@ uint8_t breath_raw_midi = 0;
 int prev_breath = 0;
 uint8_t prev_CC = 0;
 uint8_t current_CC = 0;
-int8_t octave_transpose = 0;
+int8_t octave_transpose = 1;
 int8_t octave_move = 0;
 uint8_t semitone_transpose = 0;
 bool menu = 0;
