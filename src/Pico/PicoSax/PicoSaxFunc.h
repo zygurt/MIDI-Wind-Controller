@@ -168,6 +168,7 @@ uint16_t readButtons(void){
             note_midi = 0;
             break;
         }
+        sleep_ms(100); //Let the menu buttons debounce
     } else {
         //Musical Control
         switch (note_buttons){

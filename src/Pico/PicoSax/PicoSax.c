@@ -54,99 +54,127 @@ int main()
         tud_task(); // tinyusb device task
         uint8_t msg[3];
 
+      // Get the input data
         uint8_t note_midi, debounce_midi, test_midi_note;
         note_midi = readButtons();
 
-        //debounce moving of multiple keys
-            //test_midi_note = note_midi;
-            sleep_ms(10);
-            debounce_midi  = readButtons();           
-            while(debounce_midi != note_midi){
-              note_midi = debounce_midi;
-              sleep_ms(10);
-              debounce_midi  = readButtons();
-            }
+        // //debounce moving of multiple keys
+        //     //test_midi_note = note_midi;
+        //     sleep_ms(10);
+        //     debounce_midi  = readButtons();           
+        //     while(debounce_midi != note_midi){
+        //       note_midi = debounce_midi;
+        //       sleep_ms(10);
+        //       debounce_midi  = readButtons();
+        //     }
 
 
         uint8_t breath_filt;
         breath_filt = readBreath();
         //printf("%d\t",breath_filt);
         // Set CC2 to breath value
-        current_CC = breath_raw_midi;
+        current_CC = breath_filt;
         if (fabs(current_CC - prev_CC) > CC_threshold){
-             // Set the value of controller 2 (breath) on channel 0 to breath value
-            //MIDICC(0,breath_CC, breath_raw_midi);
+            //  // Set the value of controller 2 (breath) on channel 0 to breath value
+            // //MIDICC(0,breath_CC, breath_raw_midi);
+            // msg[0] = 0xB0; //Midi CC channel 1
+            // msg[1] = breath_CC ;
+            // msg[2] = current_CC ;
+            // tud_midi_n_stream_write(0, 0, msg, 3);
             msg[0] = 0xB0; //Midi CC channel 1
-            msg[1] = breath_CC ;
-            msg[2] = current_CC ;
-            tud_midi_n_stream_write(0, 0, msg, 3);
-            msg[0] = 0xB0; //Midi CC channel 1
-            msg[1] = 3 ;
+            msg[1] = 2 ;
             msg[2] = breath_filt ;
             tud_midi_n_stream_write(0, 0, msg, 3);
             prev_CC = current_CC;
         }
 
         //-----------Sending MIDI message if needed----------
-        bool retrigger_flag = 0;
+        //bool retrigger_flag = 0;
 
-        //Turning Note Off
-        if (breath_filt < breath_threshold && note_on == 1){
+        //Note Logic
+        // This used to be multiple individual section.  Reformat to be branching.
+        if (breath_filt < breath_threshold ){
+          //Turning Note Off
+          if ( note_on == 1){
             note_on = 0;
             gpio_put(PICO_DEFAULT_LED_PIN, 0);
             // MIDInoteOff(1, prev_note, breath_raw_midi);
-
             msg[0] = 0x80;                    // Note Off - Channel 1
             msg[1] = prev_note; // Note Number
-            msg[2] = 0;                       // Velocity
+            msg[2] = breath_filt;                       // Velocity
             tud_midi_n_stream_write(0, 0, msg, 3);
             //last_note_time = get_absolute_time();
 
-            retrigger_flag = 0;
-        }
+            //retrigger_flag = 0;
+          }
+            
+        }else{
+          //Breath is above the threshold
+          gpio_put(PICO_DEFAULT_LED_PIN, 1);
+          if(note_midi != 0){
+            //Valid Key Combo
+            if(note_on == 0){
+              //No current note, so start one
+              note_on = 1;
+              // turn on new note
+              msg[0] = 0x90;                    // Note On - Channel 1
+              msg[1] = note_midi;                // Note Number
+              msg[2] = breath_raw_midi;           // Velocity
+              tud_midi_n_stream_write(0, 0, msg, 3);
+              prev_note = note_midi;
 
-        //Check to see if the breath is still above the threshold, incase a note needs to be retriggered
-        if (breath_filt > breath_threshold){
-            retrigger_flag = 1;
-            gpio_put(PICO_DEFAULT_LED_PIN, 1);
-        }
+            }else{
+              //Note is already on
+              if (note_midi != prev_note){
+                //New note is different to the old note, so there is a changing note
+//Make sure that the new note is the final note.  Should be settled after 25ms
+                //sleep_ms(50);
+                test_midi_note = readButtons();
+                //get the current time
+                current_time = get_absolute_time();
+                //IShould really just keep comparing as time passess, rather than waiting every time
+                while(note_midi != test_midi_note || (get_absolute_time()-current_time <NEW_NOTE_TIMER)){
+                  //sleep_ms(50);
+                  //We want the note to be the same and the time to be greater than the threshold
+                  //So store the new note
+                  if (test_midi_note != note_midi){
+                    //Reset the timer
+                    current_time = get_absolute_time();
+                    //Save the new note
+                    note_midi = test_midi_note;
+                  }
+                  
+                  //What is the note?
+                  test_midi_note = readButtons();
+                }
+                //Legato note change
+                // turn on new note
+                msg[0] = 0x90;                    // Note On - Channel 1
+                msg[1] = note_midi;                // Note Number
+                msg[2] = breath_raw_midi;           // Velocity
+                tud_midi_n_stream_write(0, 0, msg, 3);
+                
+                //does there need to be a delay?
+                sleep_ms(1);
 
-        //If the breath is above the threshold AND the note is different to the previous note AND between 0 and 127
-        //OR if breath is above the threshold AND the note is off
-        //AND it is longer than the minimum time between notes
-
-        
-
-        if ((retrigger_flag && (note_midi != prev_note && note_midi > 0 && note_midi < 128)) || retrigger_flag && !note_on) {
-            if(note_midi != prev_note){
-                //Breath and new note || Breath and same note
-                // turn off previous note
+                //turn off old note
                 msg[0] = 0x80;                    // Note Off - Channel 1
                 msg[1] = prev_note; // Note Number
                 msg[2] = breath_raw_midi;                       // Velocity
                 tud_midi_n_stream_write(0, 0, msg, 3);
-                // MIDInoteOff(1, prev_note, breath_raw_midi);
-                note_on = 0;
+
+                //Set the new note as previous note
+                prev_note = note_midi;
+                //No need to set note on, as it is already on.
+                note_on = 1; // Just set it anyway.
+                if(VERBOSE){
+                  // printf("%d\n",note_midi);
+                }
+              }
             }
-            
-
-
-            // turn on new note
-            msg[0] = 0x90;                    // Note On - Channel 1
-            msg[1] = note_midi;                // Note Number
-            msg[2] = breath_raw_midi;           // Velocity
-            tud_midi_n_stream_write(0, 0, msg, 3);
-            //last_note_time = get_absolute_time();
-
-            // MIDInoteOn(1, note_midi, breath_raw_midi);
-            note_on = 1;
-            //uart_puts(UART_ID, &note_midi);
-            if(VERBOSE){
-                // printf("%d\n",note_midi);
-            }
-            prev_note = note_midi;
+          }
         }
-        prev_breath = breath_filt; 
+        //prev_breath = breath_filt; 
         //sleep_ms(50); // Delay to reduce amount of midi data
     }
 }

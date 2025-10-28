@@ -47,9 +47,9 @@
 #define breath_threshold 20 //Breath on/off threshold
 #define breath_scale 0.5 //Breath scaling factor
 #define breath_array_len 8
-#define NEW_NOTE_TIMER 250000 //uS
+#define NEW_NOTE_TIMER 30000 //uS
 
-#define CC_threshold 4
+#define CC_threshold 1
 #define breath_CC 2
 
 // UART defines
