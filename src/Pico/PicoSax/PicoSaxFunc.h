@@ -1,4 +1,6 @@
 #include "pico/stdlib.h"
+#include "bsp/board.h" //USBMIDI
+#include "tusb.h" //USBMIDI
 
 void setupBoard(void){
     //Setup onboard LED
@@ -92,81 +94,100 @@ uint16_t readButtons(void){
     }
 
     if (menu == 1){
+        uint8_t temp_msg[] = {0xB0,1,64};
         //Menu control
         //The menu might need to change, as the buttons are more about combinations at the moment
         //rather then entering, changing settings and the exiting.
         if (gpio_get(13)){
+            //Octave Up
             note_buttons = 8192;
         }
         if (gpio_get(16)){
+            //Octave Down
             note_buttons = 16384;
         }
         switch (note_buttons){
-        case 64:
-            // Bb Transpose
-            if(VERBOSE){
-                printf("Bb Transpose\n");
-            }
-            octave_transpose = 0;
-            semitone_transpose = -2;
-            note_midi = 0;
-            while (gpio_get(15)); // Hold while button is pressed
-            break;
-        case 2048:
-            // Concert Pitch
-            if(VERBOSE){
-                printf("C Transpose\n");
-            }
-            octave_transpose = 0;
-            semitone_transpose = 0;
-            note_midi = 0;
-            while (gpio_get(21)); // Hold while button is pressed
-            break;
-        case 1024:
-            // Eb Transpose
-            if(VERBOSE){
-                printf("Eb Transpose\n");
-            }
-            octave_transpose = 0;
-            semitone_transpose = 3;
-            note_midi = 0;
-            while (gpio_get(20)); // Hold while button is pressed
-            break;
-        // case 8:
-        //     // Semitone Up
-        //     semitone_transpose++;
-        //     note_midi = 0;
-        //     while (digitalRead(3))
-        //         ; // Hold while button is pressed
-        //     break;
-        // case 256:
-        //     // Semitone Down
-        //     semitone_transpose--;
-        //     note_midi = 0;
-        //     while (digitalRead(8))
-        //         ; // Hold while button is pressed
-        //     break;
-        case 8192:
-            // Octave Up
-            if(VERBOSE){
-                printf("Octave Up\n");
-            }
-            octave_move++;
-            note_midi = 0;
-            while (gpio_get(13)); // Hold while button is pressed
-            break;
-        case 16384:
-            // Octave Down
-            if(VERBOSE){
-                printf("Octave Down\n");
-            }
-            octave_move--;
-            note_midi = 0;
-            while (gpio_get(16)); // Hold while button is pressed
-            break;
-        default:
-            note_midi = 0;
-            break;
+            case 2:
+                // MIDI Learn CC1 (Mod Wheel)
+                //Outputting CC data on channel 1 only
+                temp_msg[1] = 1;
+                tud_midi_n_stream_write(0, 0, temp_msg, 3);
+                while (gpio_get(12)); // Hold while button is pressed
+                break;
+
+            case 4:
+                // MIDI Learn CC2 (Breath)
+                //Outputting CC data on channel 2 only
+                temp_msg[1] = 2;
+                tud_midi_n_stream_write(0, 0, temp_msg, 3);
+                while (gpio_get(11)); // Hold while button is pressed
+                break;
+
+            case 64:
+                // Bb Transpose
+                if(VERBOSE){
+                    printf("Bb Transpose\n");
+                }
+                octave_transpose = 0;
+                semitone_transpose = -2;
+                note_midi = 0;
+                while (gpio_get(15)); // Hold while button is pressed
+                break;
+            case 2048:
+                // Concert Pitch
+                if(VERBOSE){
+                    printf("C Transpose\n");
+                }
+                octave_transpose = 0;
+                semitone_transpose = 0;
+                note_midi = 0;
+                while (gpio_get(21)); // Hold while button is pressed
+                break;
+            case 1024:
+                // Eb Transpose
+                if(VERBOSE){
+                    printf("Eb Transpose\n");
+                }
+                octave_transpose = 0;
+                semitone_transpose = 3;
+                note_midi = 0;
+                while (gpio_get(20)); // Hold while button is pressed
+                break;
+            // case 8:
+            //     // Semitone Up
+            //     semitone_transpose++;
+            //     note_midi = 0;
+            //     while (digitalRead(3))
+            //         ; // Hold while button is pressed
+            //     break;
+            // case 256:
+            //     // Semitone Down
+            //     semitone_transpose--;
+            //     note_midi = 0;
+            //     while (digitalRead(8))
+            //         ; // Hold while button is pressed
+            //     break;
+            case 8192:
+                // Octave Up
+                if(VERBOSE){
+                    printf("Octave Up\n");
+                }
+                octave_move++;
+                note_midi = 0;
+                while (gpio_get(13)); // Hold while button is pressed
+                break;
+            case 16384:
+                // Octave Down
+                if(VERBOSE){
+                    printf("Octave Down\n");
+                }
+                octave_move--;
+                note_midi = 0;
+                while (gpio_get(16)); // Hold while button is pressed
+                break;
+            default:
+                note_midi = 0;
+                break;
         }
         sleep_ms(100); //Let the menu buttons debounce
     } else {

@@ -53,6 +53,7 @@ int main()
     {
         tud_task(); // tinyusb device task
         uint8_t msg[3];
+        uint8_t test_cc_msg[] = {0xB0,74,64};
 
       // Get the input data
         uint8_t note_midi, debounce_midi, test_midi_note;
@@ -77,12 +78,8 @@ int main()
         if (fabs(current_CC - prev_CC) > CC_threshold){
             //  // Set the value of controller 2 (breath) on channel 0 to breath value
             // //MIDICC(0,breath_CC, breath_raw_midi);
-            // msg[0] = 0xB0; //Midi CC channel 1
-            // msg[1] = breath_CC ;
-            // msg[2] = current_CC ;
-            // tud_midi_n_stream_write(0, 0, msg, 3);
             msg[0] = 0xB0; //Midi CC channel 1
-            msg[1] = 2 ;
+            msg[1] = breath_CC ;
             msg[2] = breath_filt ;
             tud_midi_n_stream_write(0, 0, msg, 3);
             prev_CC = current_CC;
@@ -126,6 +123,9 @@ int main()
             }else{
               //Note is already on
               if (note_midi != prev_note){
+                //MIDI CC74 when new note
+                // test_cc_msg[2] = 127;
+                // tud_midi_n_stream_write(0, 0, test_cc_msg, 3);
                 //New note is different to the old note, so there is a changing note
 //Make sure that the new note is the final note.  Should be settled after 25ms
                 //sleep_ms(50);
@@ -142,12 +142,20 @@ int main()
                     current_time = get_absolute_time();
                     //Save the new note
                     note_midi = test_midi_note;
+                    //pulse CC74
+                    // test_cc_msg[2] = 0;
+                    // tud_midi_n_stream_write(0, 0, test_cc_msg, 3);
+                    // test_cc_msg[2] = 127;
+                    // tud_midi_n_stream_write(0, 0, test_cc_msg, 3);
                   }
                   
                   //What is the note?
                   test_midi_note = readButtons();
                 }
                 //Legato note change
+                //Turn off CC74 because the note has settled.
+                // test_cc_msg[2] = 0;
+                // tud_midi_n_stream_write(0, 0, test_cc_msg, 3);
                 // turn on new note
                 msg[0] = 0x90;                    // Note On - Channel 1
                 msg[1] = note_midi;                // Note Number
