@@ -67,7 +67,8 @@ uint8_t readBreath(void){
 uint16_t readButtons(void){
     const uint8_t read_order[13] = {14, 12, 11, 10, 9, 8, 15, 17, 18, 19, 20, 21, 22}; //Order to Read GPIO
     uint8_t n = 0;
-    uint16_t note_buttons = 0, note_midi = 0;
+    uint16_t note_buttons = 0;
+    int16_t note_midi = -10;
     // Get Buttons value
     for (n = 0; n < 13; n++){
         //This could be updated to gpio_get_all and then a mask and shift
@@ -130,7 +131,7 @@ uint16_t readButtons(void){
                 }
                 octave_transpose = 0;
                 semitone_transpose = -2;
-                note_midi = 0;
+                note_midi = -10;
                 while (gpio_get(15)); // Hold while button is pressed
                 break;
             case 2048:
@@ -140,7 +141,7 @@ uint16_t readButtons(void){
                 }
                 octave_transpose = 0;
                 semitone_transpose = 0;
-                note_midi = 0;
+                note_midi = -10;
                 while (gpio_get(21)); // Hold while button is pressed
                 break;
             case 1024:
@@ -150,7 +151,7 @@ uint16_t readButtons(void){
                 }
                 octave_transpose = 0;
                 semitone_transpose = 3;
-                note_midi = 0;
+                note_midi = -10;
                 while (gpio_get(20)); // Hold while button is pressed
                 break;
             // case 8:
@@ -173,7 +174,7 @@ uint16_t readButtons(void){
                     printf("Octave Up\n");
                 }
                 octave_move++;
-                note_midi = 0;
+                note_midi = -10;
                 while (gpio_get(13)); // Hold while button is pressed
                 break;
             case 16384:
@@ -182,11 +183,11 @@ uint16_t readButtons(void){
                     printf("Octave Down\n");
                 }
                 octave_move--;
-                note_midi = 0;
+                note_midi = -10;
                 while (gpio_get(16)); // Hold while button is pressed
                 break;
             default:
-                note_midi = 0;
+                note_midi = -10;
                 break;
         }
         sleep_ms(100); //Let the menu buttons debounce
@@ -238,6 +239,10 @@ uint16_t readButtons(void){
             note_midi = 46;
             break;
         case 134:
+            //A# another alternative
+            note_midi = 46;
+            break;
+        case 150:
             //A# another alternative
             note_midi = 46;
             break;
@@ -310,12 +315,12 @@ uint16_t readButtons(void){
             note_midi = 36;
             break;
         default:
-            note_midi = 0;
+            note_midi = -10;
             break;
         }
 
         // Adjust the octave
-        if (note_midi > 0){
+        if (note_midi >= 0){
             uint8_t octave_buttons = 0;
             uint8_t octave_transpose = 0;
             octave_buttons = gpio_get(13)+(gpio_get(16) << 1);
