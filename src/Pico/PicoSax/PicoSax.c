@@ -108,7 +108,7 @@ int main()
         }else{
           //Breath is above the threshold
           gpio_put(PICO_DEFAULT_LED_PIN, 1);
-          if(note_midi != 0){
+          if(note_midi >= 0 && note_midi < 128){
             //Valid Key Combo
             if(note_on == 0){
               //No current note, so start one
