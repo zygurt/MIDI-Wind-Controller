@@ -1186,142 +1186,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PicoSax:Gateron_KS-33"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Gateron_KS-33"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "PicoSax:KS-33"
-				(at 0 7.112 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single Pole Single Throw (SPST) switch"
-				(at 0.254 5.334 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch lever"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Gateron_KS-33_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.254) (xy 1.524 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Gateron_KS-33_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "PicoSax:MIDI_DIN5"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1648,6 +1512,142 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PicoSax:Omron_B3K_L13L"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Omron_B3K_L13L"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0.254 5.334 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Omron_B3K_L13L_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Omron_B3K_L13L_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3401,6 +3401,12 @@
 		(uuid "045a97e7-a61c-4b0d-ad25-1085c0463093")
 	)
 	(junction
+		(at 262.89 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b3548c5-e736-4fce-bdbd-b4856a0052a2")
+	)
+	(junction
 		(at 137.16 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3425,6 +3431,12 @@
 		(uuid "19a7b1e9-068d-4834-a598-d9d17d35ce10")
 	)
 	(junction
+		(at 262.89 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1aff8888-b82b-4ba6-8817-b83aa2274561")
+	)
+	(junction
 		(at 227.33 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3435,6 +3447,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1bc03005-854c-4675-ad22-03542ef49f0c")
+	)
+	(junction
+		(at 262.89 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2bdbecb0-2fd5-49af-9b5a-01e8225799a7")
 	)
 	(junction
 		(at 137.16 167.64)
@@ -3449,6 +3467,12 @@
 		(uuid "397f433f-dd24-4bb9-b9a4-9c717952daab")
 	)
 	(junction
+		(at 332.74 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4890387f-fd66-4272-b32c-ed27662cfff4")
+	)
+	(junction
 		(at 196.85 198.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3459,6 +3483,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b09842f-dce3-4ac7-a05b-6a5244502273")
+	)
+	(junction
+		(at 262.89 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b6bb093-41cb-48af-ae22-8228c5e7b377")
 	)
 	(junction
 		(at 137.16 165.1)
@@ -3485,6 +3515,12 @@
 		(uuid "801de23d-e80d-4d51-993f-d477e77e5631")
 	)
 	(junction
+		(at 332.74 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "810b0bda-aba5-4435-ac2c-858e1899616c")
+	)
+	(junction
 		(at 303.53 204.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3497,10 +3533,28 @@
 		(uuid "96a9cef9-67dc-41fd-a46b-b9ad3dabd57f")
 	)
 	(junction
+		(at 332.74 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "976b9974-ab64-4bf4-bab7-e30c4f876a2f")
+	)
+	(junction
 		(at 73.66 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9dbc29d8-b029-4cba-a3a1-3220d2341b07")
+	)
+	(junction
+		(at 262.89 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a195a024-3cbe-43f3-8844-2f18aa63fcff")
+	)
+	(junction
+		(at 262.89 196.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4f92273-fc80-431c-97d3-552ea241ac6e")
 	)
 	(junction
 		(at 73.66 95.25)
@@ -3521,6 +3575,12 @@
 		(uuid "b16ee336-584f-460e-9102-abcc9220fff8")
 	)
 	(junction
+		(at 332.74 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1e62625-9daf-4449-bcd4-73c73018399f")
+	)
+	(junction
 		(at 110.49 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3533,10 +3593,10 @@
 		(uuid "ba76a266-2ffb-48dd-a535-4ddc183b9468")
 	)
 	(junction
-		(at 168.91 99.06)
+		(at 332.74 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c3e8e2d8-69f2-4b46-ae84-2894c4cf012b")
+		(uuid "c1c00f7b-0278-4f08-ba51-2d2036e3ffd7")
 	)
 	(junction
 		(at 191.77 198.12)
@@ -3569,6 +3629,12 @@
 		(uuid "e282cb29-3124-480e-9502-ef3ea48fac1f")
 	)
 	(junction
+		(at 332.74 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3bdf2d6-2ecd-49a7-a8a0-649f9909cede")
+	)
+	(junction
 		(at 73.66 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3579,6 +3645,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f692df05-aabc-490b-9144-696a30eb8172")
+	)
+	(junction
+		(at 332.74 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb1bcf0c-0e5b-409d-aba2-f6ca6d67b468")
 	)
 	(junction
 		(at 73.66 63.5)
@@ -3594,7 +3666,7 @@
 	)
 	(no_connect
 		(at 332.74 71.12)
-		(uuid "ae857282-4ae0-4e05-bca2-31db6a7d0b10")
+		(uuid "18010425-bdc0-40b3-9e6c-562999e23d9b")
 	)
 	(bus_entry
 		(at -33.02 -17.78)
@@ -3614,16 +3686,6 @@
 			(type default)
 		)
 		(uuid "0002fb23-06de-4644-aae5-b11958438bd9")
-	)
-	(wire
-		(pts
-			(xy 262.89 71.12) (xy 262.89 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00177c64-6c17-451a-ba50-15f2381d005f")
 	)
 	(wire
 		(pts
@@ -3727,16 +3789,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 99.06) (xy 168.91 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1129fc4b-cca6-4be4-a8ed-65c0c1e480ca")
-	)
-	(wire
-		(pts
 			(xy 373.38 209.55) (xy 373.38 196.85)
 		)
 		(stroke
@@ -3787,7 +3839,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 57.15) (xy 316.23 209.55)
+			(xy 316.23 80.01) (xy 316.23 209.55)
 		)
 		(stroke
 			(width 0)
@@ -3967,16 +4019,6 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 96.52) (xy 262.89 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3152c57e-ad7c-4b38-acb5-9de2a6b99564")
-	)
-	(wire
-		(pts
 			(xy 332.74 133.35) (xy 332.74 124.46)
 		)
 		(stroke
@@ -4037,16 +4079,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 99.06) (xy 168.91 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39f98499-d389-447d-9d5c-8602682b64fd")
-	)
-	(wire
-		(pts
 			(xy 137.16 142.24) (xy 151.13 142.24)
 		)
 		(stroke
@@ -4097,7 +4129,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 101.6) (xy 168.91 99.06)
+			(xy 168.91 101.6) (xy 168.91 92.71)
 		)
 		(stroke
 			(width 0)
@@ -4287,16 +4319,6 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 77.47) (xy 262.89 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57bb1d00-3fdf-476d-a5ad-b0989efe43b0")
-	)
-	(wire
-		(pts
 			(xy 156.21 72.39) (xy 158.75 72.39)
 		)
 		(stroke
@@ -4447,16 +4469,6 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 81.28) (xy 303.53 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "648dd50d-a97b-419d-a503-0a72e9a7841b")
-	)
-	(wire
-		(pts
 			(xy 106.68 182.88) (xy 110.49 182.88)
 		)
 		(stroke
@@ -4494,16 +4506,6 @@
 			(type default)
 		)
 		(uuid "6a83e529-4fe2-421f-a844-f67eb519ff6f")
-	)
-	(wire
-		(pts
-			(xy 262.89 81.28) (xy 303.53 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b84d675-b589-40b6-b3ae-f2994e7f73e1")
 	)
 	(wire
 		(pts
@@ -4577,16 +4579,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 95.25) (xy 262.89 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72a92882-453c-4de9-b157-d841b39d3fbf")
-	)
-	(wire
-		(pts
 			(xy 106.68 63.5) (xy 110.49 63.5)
 		)
 		(stroke
@@ -4604,16 +4596,6 @@
 			(type default)
 		)
 		(uuid "7501b651-17d5-4b19-b8cd-e76a75ffc9df")
-	)
-	(wire
-		(pts
-			(xy 162.56 97.79) (xy 162.56 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7502ab3c-687c-4a9c-81db-7826c8a82533")
 	)
 	(wire
 		(pts
@@ -4777,16 +4759,6 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 57.15) (xy 316.23 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a779e08-d9d1-42d1-9b9d-3a26187ff886")
-	)
-	(wire
-		(pts
 			(xy 262.89 104.14) (xy 303.53 104.14)
 		)
 		(stroke
@@ -4814,6 +4786,16 @@
 			(type default)
 		)
 		(uuid "8c01dd18-6c77-4cec-bc3f-76d82c31cebf")
+	)
+	(wire
+		(pts
+			(xy 262.89 80.01) (xy 316.23 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f923586-0eef-4c36-a384-e78dc57ab8e4")
 	)
 	(wire
 		(pts
@@ -5277,7 +5259,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 96.52) (xy 257.81 95.25)
+			(xy 262.89 99.06) (xy 262.89 95.25)
 		)
 		(stroke
 			(width 0)
@@ -5444,16 +5426,6 @@
 			(type default)
 		)
 		(uuid "d865c8ba-ef83-4261-98ad-6df86c4e387c")
-	)
-	(wire
-		(pts
-			(xy 257.81 96.52) (xy 262.89 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8750f7c-d48e-453c-82db-6ee0353d203a")
 	)
 	(wire
 		(pts
@@ -5627,16 +5599,6 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 92.71) (xy 262.89 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f174bf24-a0fa-4a29-b352-e3bb7b46d878")
-	)
-	(wire
-		(pts
 			(xy 201.93 135.89) (xy 227.33 135.89)
 		)
 		(stroke
@@ -5767,6 +5729,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 92.71) (xy 262.89 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feb1aec2-c719-44fe-aacc-1cf33e94445a")
+	)
+	(wire
+		(pts
 			(xy 373.38 104.14) (xy 373.38 95.25)
 		)
 		(stroke
@@ -5785,26 +5757,6 @@
 		)
 		(uuid "ff73f9e1-b997-4785-8317-96e613bd8b05")
 	)
-	(label "VSYS"
-		(at 262.89 156.6233 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0339910b-6c68-42e0-bda8-b413de9f3279")
-	)
-	(label "VSYS"
-		(at 332.74 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0410a8a6-dbef-4013-a9b3-fdf6e6a6a339")
-	)
 	(label "D"
 		(at 210.82 133.35 0)
 		(effects
@@ -5814,16 +5766,6 @@
 			(justify left bottom)
 		)
 		(uuid "05a4366f-7e2b-4879-befb-df45ff34c63d")
-	)
-	(label "VSYS"
-		(at 332.74 176.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0ceaf7dc-b328-4482-9091-439dc81a7dd1")
 	)
 	(label "A"
 		(at 115.57 95.25 0)
@@ -5845,16 +5787,6 @@
 		)
 		(uuid "1a2d27dc-4c45-4b31-8ea3-9721cf207d74")
 	)
-	(label "VSYS"
-		(at 332.74 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "24cd255d-e09d-4ca5-9584-fe0819cd0dfa")
-	)
 	(label "LEDS"
 		(at 306.07 215.9 0)
 		(effects
@@ -5864,16 +5796,6 @@
 			(justify left bottom)
 		)
 		(uuid "2e758713-751b-4869-909c-f4d715bc775a")
-	)
-	(label "VSYS"
-		(at 332.74 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3392206f-8018-4b72-84f7-5e27c1344d49")
 	)
 	(label "F"
 		(at 77.47 80.01 0)
@@ -5894,26 +5816,6 @@
 			(justify left bottom)
 		)
 		(uuid "3d55ddde-0872-437a-aad5-2eaad40e7a97")
-	)
-	(label "VSYS"
-		(at 332.74 196.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "439fa111-54c1-4261-9bb6-2c5c5f14f502")
-	)
-	(label "VSYS"
-		(at 332.74 156.21 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "45552773-9432-4a1e-a47e-2033f366892e")
 	)
 	(label "8vb"
 		(at 210.82 123.19 0)
@@ -5965,16 +5867,6 @@
 		)
 		(uuid "5a486cc6-3c69-4694-89dd-022d5cddd260")
 	)
-	(label "VSYS"
-		(at 262.89 196.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5b3ceb28-9ffb-4c19-bc23-d7b4f972bb76")
-	)
 	(label "Ctrl"
 		(at 210.82 143.51 0)
 		(effects
@@ -6025,26 +5917,6 @@
 		)
 		(uuid "6f6721a9-ace5-44cd-ad38-bec91e5afe71")
 	)
-	(label "VSYS"
-		(at 262.89 176.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "79a25704-9e14-4f1f-a459-b7ecb49b82d9")
-	)
-	(label "VSYS"
-		(at 162.56 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7ed6735b-79f0-44ab-8722-ece81e5fbffa")
-	)
 	(label "C"
 		(at 73.66 139.7 0)
 		(effects
@@ -6054,16 +5926,6 @@
 			(justify left bottom)
 		)
 		(uuid "887c3320-0ae2-44f7-ac01-8947845a84d5")
-	)
-	(label "VSYS"
-		(at 262.89 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "89af8faf-ed97-46b2-8234-d2ab2602f94e")
 	)
 	(label "E"
 		(at 210.82 130.81 0)
@@ -6084,16 +5946,6 @@
 			(justify left bottom)
 		)
 		(uuid "91ceb7a3-3ea0-4f8d-b00d-d43f06d89030")
-	)
-	(label "VSYS"
-		(at 262.89 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "92f2289c-548a-4a93-92c6-2f98674c61b6")
 	)
 	(label "E"
 		(at 77.47 95.25 0)
@@ -6145,16 +5997,6 @@
 		)
 		(uuid "b2d3db9e-b613-4a51-8558-a8d890b48d5b")
 	)
-	(label "VSYS"
-		(at 257.81 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b3112020-a7b3-4c58-b862-149202b0757e")
-	)
 	(label "Ctrl"
 		(at 73.66 162.56 0)
 		(effects
@@ -6205,16 +6047,6 @@
 		)
 		(uuid "d637cee0-8b32-4fc6-bafb-aac1ab515503")
 	)
-	(label "VSYS"
-		(at 262.89 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e5aebd5c-59d2-404f-a2a6-c2781858a16d")
-	)
 	(label "Eb"
 		(at 73.66 125.73 0)
 		(effects
@@ -6224,16 +6056,6 @@
 			(justify left bottom)
 		)
 		(uuid "f09a2c9c-3179-4c8b-8ac4-d0e55a7c2731")
-	)
-	(label "VSYS"
-		(at 332.74 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f5556b31-c2e7-48eb-81bd-93395d46549a")
 	)
 	(label "B"
 		(at 115.57 80.01 0)
@@ -6256,150 +6078,6 @@
 		(uuid "fd7e3c57-bed6-4130-afc9-e9192408a908")
 	)
 	(symbol
-		(lib_id "PicoSax:19-C47_RSGHBHC-5V01_2T")
-		(at 262.89 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0159045c-bfbc-4704-8c35-b1ad225f4f6a")
-		(property "Reference" "D2"
-			(at 283.21 60.96 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "19-C47/RSGHBHC-5V01/2T"
-			(at 283.21 63.5 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:19-C47_RSGHBHC-5V01-2T"
-			(at 265.684 59.182 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "19-C47/RSGHBHC-5V01/2T"
-			(at 267.462 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 262.89 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "26473b7d-b477-439b-a277-be77b7ec876f")
-		)
-		(pin "2"
-			(uuid "3b1d0360-4c86-4199-a8e2-582cdaa346de")
-		)
-		(pin "3"
-			(uuid "892cf8a5-5a81-41b0-867e-e9e3aaa2adda")
-		)
-		(pin "1"
-			(uuid "6ae65a43-ac18-41df-aa4a-bb19fca53b08")
-		)
-		(instances
-			(project "PicoSax"
-				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 101.6 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0208c9ba-e1c4-4b94-85d0-ce4401ffc550")
-		(property "Reference" "SWG1"
-			(at 101.6 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gateron_KS-33"
-			(at 101.6 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 101.6 103.378 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 101.6 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 101.854 105.156 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8f31ab17-6929-43c6-a83f-8e97ae8c21f1")
-		)
-		(pin "2"
-			(uuid "35e7f48f-8fcd-4c3b-ab20-05153e6dfbb3")
-		)
-		(instances
-			(project "PicoSax"
-				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWG1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PicoSax:GND")
 		(at 255.27 139.7 0)
 		(unit 1)
@@ -6409,7 +6087,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0240ce87-7f01-4205-ac24-ee243d7cb985")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR052"
 			(at 255.27 146.05 0)
 			(effects
 				(font
@@ -6459,74 +6137,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR055")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PicoSax:GND")
-		(at 303.53 71.12 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "02d6a445-9788-43d6-a8f3-43f1f5615f22")
-		(property "Reference" "#PWR059"
-			(at 309.88 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 307.34 71.1199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 303.53 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 303.53 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 303.53 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "caa63d9a-2ca5-4324-9680-db2e2908b2e2")
-		)
-		(instances
-			(project "PicoSax"
-				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR059")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -6541,7 +6152,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "038951ee-e667-4ff4-9742-217986cd3262")
-		(property "Reference" "C17"
+		(property "Reference" "C16"
 			(at 326.39 178.816 90)
 			(effects
 				(font
@@ -6593,7 +6204,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C17")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -6609,7 +6220,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03d70982-03b4-4ba8-8eb4-7c10e6fc9685")
-		(property "Reference" "D6"
+		(property "Reference" "D5"
 			(at 283.21 143.51 0)
 			(effects
 				(font
@@ -6669,7 +6280,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D6")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -6685,7 +6296,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bb36be2-283b-459e-9d02-4fb2f9fab72f")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR055"
 			(at 255.27 207.01 0)
 			(effects
 				(font
@@ -6735,7 +6346,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR058")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -6751,7 +6362,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c458265-fa6d-4965-8655-cfe87420647f")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR091"
 			(at 201.93 66.04 0)
 			(effects
 				(font
@@ -6801,7 +6412,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR043")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -6817,7 +6428,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0dc52725-531c-4016-9191-508bbac4e4c5")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR084"
 			(at 379.73 92.71 0)
 			(effects
 				(font
@@ -6868,7 +6479,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR075")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -6884,7 +6495,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0e61e536-9e0b-4c7d-8498-87fb737233ce")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR068"
 			(at 303.53 210.82 0)
 			(effects
 				(font
@@ -6934,7 +6545,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR066")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -7011,74 +6622,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 62.23 181.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1298e0e4-071d-4ea1-810c-964247b2db0e")
-		(property "Reference" "SW8vb1"
-			(at 62.23 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gateron_KS-33"
-			(at 62.23 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 62.23 174.498 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 62.23 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 62.484 176.276 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "67ab3d49-2877-4d30-b29e-618338652d8a")
-		)
-		(pin "2"
-			(uuid "aefb5521-581c-4543-b225-a55d1cda7c23")
-		)
-		(instances
-			(project "PicoSax"
-				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SW8vb1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PicoSax:C")
 		(at 328.93 77.47 270)
 		(unit 1)
@@ -7087,7 +6630,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1302150b-a9b1-4799-b5d4-8bf1b9889aeb")
-		(property "Reference" "C12"
+		(property "Reference" "C11"
 			(at 326.39 75.946 90)
 			(effects
 				(font
@@ -7139,7 +6682,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C12")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -7223,7 +6766,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15b54858-dc36-4e3a-ade1-f623be005d22")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR051"
 			(at 255.27 125.73 0)
 			(effects
 				(font
@@ -7273,7 +6816,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR054")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -7478,7 +7021,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b642975-1347-4525-b1ba-379458052265")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR049"
 			(at 231.14 171.45 0)
 			(effects
 				(font
@@ -7529,7 +7072,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR051")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -7545,7 +7088,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1bdd4e91-e31c-4a2b-9915-1398d00153fc")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR090"
 			(at 181.61 57.15 0)
 			(effects
 				(font
@@ -7595,7 +7138,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR039")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -7611,7 +7154,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ca66763-2b9f-4a2f-bc4c-8dc7a8ae8c8e")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR045"
 			(at 220.98 140.97 0)
 			(effects
 				(font
@@ -7662,7 +7205,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR047")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -7678,7 +7221,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e1f41e6-9a1e-4ab0-aef0-9e0b399c042f")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR088"
 			(at 379.73 173.99 0)
 			(effects
 				(font
@@ -7729,7 +7272,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR079")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -7744,7 +7287,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1ed25016-8a8f-4618-81df-ea7236170519")
-		(property "Reference" "C13"
+		(property "Reference" "C12"
 			(at 326.39 97.536 90)
 			(effects
 				(font
@@ -7796,7 +7339,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C13")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -7864,74 +7407,6 @@
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 62.23 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "20592be0-1b93-46d1-b58b-a9ea07333767")
-		(property "Reference" "SWF1"
-			(at 62.23 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gateron_KS-33"
-			(at 62.23 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 62.23 72.898 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 62.23 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 62.484 74.676 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "593d69cd-dc25-4491-8c45-3d53e9e69226")
-		)
-		(pin "2"
-			(uuid "ba2e1a91-5cae-4edf-97b1-fc332b44db38")
-		)
-		(instances
-			(project "PicoSax"
-				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWF1")
 					(unit 1)
 				)
 			)
@@ -8008,33 +7483,17 @@
 		)
 	)
 	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 101.6 95.25 0)
+		(lib_id "PicoSax:+5V")
+		(at 262.89 196.85 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "22358350-6567-4130-a493-e97942308104")
-		(property "Reference" "SWA1"
-			(at 101.6 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gateron_KS-33"
-			(at 101.6 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 101.6 88.138 0)
+		(uuid "20f4b849-1f12-4fc0-94f7-c9421d13d7b8")
+		(property "Reference" "#PWR061"
+			(at 266.7 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8042,8 +7501,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 101.6 95.25 0)
+		(property "Value" "+5V"
+			(at 259.08 196.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8051,8 +7519,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 101.854 89.916 0)
+		(property "Datasheet" ""
+			(at 262.89 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 262.89 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8061,15 +7538,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "eee0d579-3c5b-4392-a0ba-93bc3305dbe0")
-		)
-		(pin "2"
-			(uuid "240850f0-2805-4734-af59-86883303bee7")
+			(uuid "89013338-591d-436a-bb01-6f1d56b4b56b")
 		)
 		(instances
-			(project "PicoSax"
+			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWA1")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -8085,7 +7559,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24ed4751-dc86-4d4e-91de-fbae56884fdb")
-		(property "Reference" "D15"
+		(property "Reference" "D14"
 			(at 353.06 184.15 0)
 			(effects
 				(font
@@ -8145,7 +7619,75 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D15")
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 101.6 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "294faac5-5c10-46eb-b2af-4ba70a6fe633")
+		(property "Reference" "SWB1"
+			(at 101.6 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Omron_B3K_L13L"
+			(at 101.6 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 101.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 101.854 74.676 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3eb99f76-d1cc-4729-9536-82e7ac7c32f1")
+		)
+		(pin "2"
+			(uuid "be42602d-84dc-4822-921f-af809c2e7f7e")
+		)
+		(instances
+			(project ""
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "SWB1")
 					(unit 1)
 				)
 			)
@@ -8295,7 +7837,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c335477-73ba-43d8-8d07-0217aa15144c")
-		(property "Reference" "D11"
+		(property "Reference" "D10"
 			(at 353.06 102.87 0)
 			(effects
 				(font
@@ -8355,7 +7897,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D11")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -8441,7 +7983,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f42c46d-2d68-4a61-aeb9-9c4977f5ff70")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR043"
 			(at 205.74 171.45 0)
 			(effects
 				(font
@@ -8492,7 +8034,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR045")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -8507,7 +8049,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2f572147-48ef-404e-ae1e-1f1c91f2c76e")
-		(property "Reference" "C15"
+		(property "Reference" "C14"
 			(at 326.39 138.176 90)
 			(effects
 				(font
@@ -8559,40 +8101,24 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C15")
+					(reference "C14")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 62.23 162.56 0)
+		(lib_id "PicoSax:+5V")
+		(at 262.89 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "30a8a4e6-0877-4e73-9f13-89980e1e5d1e")
-		(property "Reference" "SWCtrl1"
-			(at 62.23 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gateron_KS-33"
-			(at 62.23 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 62.23 155.448 0)
+		(uuid "30d11989-feb5-4d12-b177-c8b6d0c0a73e")
+		(property "Reference" "#PWR056"
+			(at 266.7 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8600,8 +8126,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 62.23 162.56 0)
+		(property "Value" "+5V"
+			(at 259.08 95.2499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8609,8 +8144,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 62.484 157.226 0)
+		(property "Datasheet" ""
+			(at 262.89 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 262.89 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8619,15 +8163,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a1b0fcdc-2b34-4822-a647-56652dd0b640")
-		)
-		(pin "2"
-			(uuid "559fe662-75d8-4774-897a-16b3637f60e5")
+			(uuid "acca361f-2263-4b06-ba38-34a3bdecb045")
 		)
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWCtrl1")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -8643,7 +8184,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3116e2d9-0da2-4238-a91b-365178c5f6d8")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR083"
 			(at 379.73 71.12 0)
 			(effects
 				(font
@@ -8694,7 +8235,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR074")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -8992,7 +8533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36e1c7e1-f77d-49ac-9c6f-4a3367aab5c1")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR071"
 			(at 325.12 125.73 0)
 			(effects
 				(font
@@ -9042,75 +8583,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR069")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 62.23 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37f50b37-fdc8-4154-87f4-7640dc36f744")
-		(property "Reference" "SWEb1"
-			(at 62.23 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gateron_KS-33"
-			(at 62.23 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 62.23 118.618 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 62.23 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 62.484 120.396 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ddf837cb-1e81-47ed-81f1-33a5f7c24146")
-		)
-		(pin "2"
-			(uuid "07859713-f188-4e99-b70f-b57dd242ba3d")
-		)
-		(instances
-			(project "PicoSax"
-				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWEb1")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -9125,7 +8598,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "381e9515-d7d7-4d1a-952b-77ecb54425c2")
-		(property "Reference" "C6"
+		(property "Reference" "C5"
 			(at 256.54 117.856 90)
 			(effects
 				(font
@@ -9177,7 +8650,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C6")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -9193,7 +8666,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38c838ee-4273-4aea-af06-a3113d356d01")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR073"
 			(at 325.12 166.37 0)
 			(effects
 				(font
@@ -9243,7 +8716,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR071")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -9459,7 +8932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42c464c8-d3a5-4a18-a6df-dc72ef790731")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR047"
 			(at 231.14 161.29 0)
 			(effects
 				(font
@@ -9510,7 +8983,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR049")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -9666,7 +9139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "444c2883-ecfd-4db2-999e-d5a91bbdd146")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR044"
 			(at 220.98 128.27 0)
 			(effects
 				(font
@@ -9717,7 +9190,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR046")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -9733,7 +9206,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44dbd6ea-23de-4351-8cd1-a2df663067cd")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR050"
 			(at 255.27 105.41 0)
 			(effects
 				(font
@@ -9783,7 +9256,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR053")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -9939,7 +9412,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4682570e-6e3d-4056-93ab-a3b7c0aab479")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR040"
 			(at 191.77 204.47 0)
 			(effects
 				(font
@@ -9989,7 +9462,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR041")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -10057,6 +9530,73 @@
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:+5V")
+		(at 262.89 115.57 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "490d7699-9f66-43d1-92b3-6e7829bd375d")
+		(property "Reference" "#PWR057"
+			(at 266.7 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 259.08 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 262.89 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "566a8fa9-8e9a-402e-b2de-b73232a7437b")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -10203,6 +9743,74 @@
 		)
 	)
 	(symbol
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 62.23 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "512c448c-9638-4090-a887-9d43f887ff19")
+		(property "Reference" "SWEb1"
+			(at 62.23 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Omron_B3K_L13L"
+			(at 62.23 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 62.23 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 62.484 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8919b2d7-d0de-4216-96dc-c77a3b04b5be")
+		)
+		(pin "2"
+			(uuid "bddcbd75-9a72-4b93-906d-33ce1a298ebf")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "SWEb1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PicoSax:GND")
 		(at 227.33 153.67 270)
 		(unit 1)
@@ -10212,7 +9820,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51426a32-e242-43a4-a6a3-94c5c4782dd0")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR046"
 			(at 220.98 153.67 0)
 			(effects
 				(font
@@ -10263,7 +9871,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR048")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -10278,7 +9886,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "514e4e7d-2617-4122-ab1c-6fca6ac7f4e9")
-		(property "Reference" "C7"
+		(property "Reference" "C6"
 			(at 256.54 138.176 90)
 			(effects
 				(font
@@ -10330,7 +9938,75 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C7")
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 62.23 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "525cbdd0-9c17-45dc-8545-8ef52d5516b9")
+		(property "Reference" "SWCTRL1"
+			(at 62.23 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Omron_B3K_L13L"
+			(at 62.23 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 62.23 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 62.484 157.226 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63e60f2f-ae5d-480b-a1a7-a8678f8c0fe4")
+		)
+		(pin "2"
+			(uuid "f7f4dc13-1c8d-4aba-b247-f04af0528be1")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "SWCTRL1")
 					(unit 1)
 				)
 			)
@@ -10404,6 +10080,140 @@
 		)
 	)
 	(symbol
+		(lib_id "PicoSax:+5V")
+		(at 332.74 115.57 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56597f4f-684e-49f9-ae46-a6e908ad3ff4")
+		(property "Reference" "#PWR078"
+			(at 336.55 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 328.93 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 332.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 332.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 332.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "971ea537-79d8-4f38-ac80-c4a218784133")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:+5V")
+		(at 262.89 176.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5789d045-f9fc-44d9-a9b0-beac21627f88")
+		(property "Reference" "#PWR060"
+			(at 266.7 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 259.08 176.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 262.89 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "967840ba-b054-401c-ae57-539df003aa1e")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PicoSax:19-C47_RSGHBHC-5V01_2T")
 		(at 262.89 194.31 0)
 		(unit 1)
@@ -10413,7 +10223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "589e8cf8-7c8a-4239-b5e0-63e523780eed")
-		(property "Reference" "D8"
+		(property "Reference" "D7"
 			(at 283.21 184.15 0)
 			(effects
 				(font
@@ -10473,7 +10283,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D8")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -10489,7 +10299,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "596bdced-e4fa-46e9-8534-e704c229a771")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR064"
 			(at 309.88 133.35 0)
 			(effects
 				(font
@@ -10540,7 +10350,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR062")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -10556,7 +10366,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e35cde5-0a83-4ed1-97a3-01979355b2a0")
-		(property "Reference" "D7"
+		(property "Reference" "D6"
 			(at 283.21 163.83 0)
 			(effects
 				(font
@@ -10616,40 +10426,40 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D7")
+					(reference "D6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 101.6 80.01 0)
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 62.23 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "60c17af4-1f42-4e6d-8098-7fd1370395a5")
-		(property "Reference" "SWB1"
-			(at 101.6 73.66 0)
+		(uuid "5e8d0e2a-29e2-436e-bae6-28d9aaacf246")
+		(property "Reference" "SWF1"
+			(at 62.23 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Gateron_KS-33"
-			(at 101.6 76.2 0)
+		(property "Value" "Omron_B3K_L13L"
+			(at 62.23 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 101.6 72.898 0)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 62.23 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10658,7 +10468,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 80.01 0)
+			(at 62.23 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10667,7 +10477,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 101.854 74.676 0)
+			(at 62.484 74.676 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10676,15 +10486,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ad075eec-d73e-4286-abef-05d69faeb3b1")
+			(uuid "49dac1ce-3582-4be3-a598-70e6a6252b07")
 		)
 		(pin "2"
-			(uuid "b6c1518f-dc54-4d7a-aa58-1451ebee1535")
+			(uuid "e20564c7-b157-472c-9477-5111436db727")
 		)
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWB1")
+					(reference "SWF1")
 					(unit 1)
 				)
 			)
@@ -10761,16 +10571,33 @@
 		)
 	)
 	(symbol
-		(lib_id "PicoSax:GND")
-		(at 255.27 77.47 0)
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 62.23 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6726aa7f-2678-4d35-be10-ead665dba39e")
-		(property "Reference" "#PWR052"
-			(at 255.27 83.82 0)
+		(fields_autoplaced yes)
+		(uuid "625d3096-2fe3-4be5-a2b3-f4b34bdb3216")
+		(property "Reference" "SWBb1"
+			(at 62.23 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Omron_B3K_L13L"
+			(at 62.23 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 62.23 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10778,16 +10605,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 255.27 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 255.27 77.47 0)
+		(property "Datasheet" "~"
+			(at 62.23 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10795,17 +10614,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 255.27 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 77.47 0)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 62.484 58.166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10814,12 +10624,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "45983921-ae92-4050-8f11-b5ee573ae0b3")
+			(uuid "2b96a215-1fca-496f-b33d-72ba3879b055")
+		)
+		(pin "2"
+			(uuid "ff5573ef-b452-49d6-8519-0bb52c94a364")
 		)
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR052")
+					(reference "SWBb1")
 					(unit 1)
 				)
 			)
@@ -11033,7 +10846,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a000d59-0da7-4dac-8768-99da1bb813b9")
-		(property "Reference" "C16"
+		(property "Reference" "C15"
 			(at 326.39 158.496 90)
 			(effects
 				(font
@@ -11085,7 +10898,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C16")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -11167,7 +10980,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6af0abee-07ab-4df9-9edc-b7acea081a97")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR048"
 			(at 220.98 166.37 0)
 			(effects
 				(font
@@ -11218,7 +11031,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR050")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -11292,6 +11105,74 @@
 		)
 	)
 	(symbol
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 62.23 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b6e35c3-eb24-4848-863a-8fca65613931")
+		(property "Reference" "SWC1"
+			(at 62.23 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Omron_B3K_L13L"
+			(at 62.23 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 62.23 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 62.484 134.366 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f0e3ced-e665-4b6d-b738-9bddf3086971")
+		)
+		(pin "2"
+			(uuid "b1ae768c-93a8-4d10-8c67-fca49a374486")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "SWC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PicoSax:19-C47_RSGHBHC-5V01_2T")
 		(at 332.74 133.35 0)
 		(unit 1)
@@ -11301,7 +11182,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6cb793fa-b9ae-4076-8340-51d4d05d3ca4")
-		(property "Reference" "D12"
+		(property "Reference" "D11"
 			(at 353.06 123.19 0)
 			(effects
 				(font
@@ -11361,7 +11242,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D12")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -11427,6 +11308,73 @@
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:+5V")
+		(at 262.89 156.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6eb0cc08-49b5-40f3-9da7-bc3ba1fdad17")
+		(property "Reference" "#PWR059"
+			(at 266.7 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 259.08 156.2099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 262.89 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96b3f45c-e370-4aa6-8c36-62f43209c270")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -11596,7 +11544,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73b923e4-1174-4ad3-bfa3-fd66d7816cfb")
-		(property "Reference" "D10"
+		(property "Reference" "D9"
 			(at 353.06 82.55 0)
 			(effects
 				(font
@@ -11656,7 +11604,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D10")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -11671,7 +11619,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "74a84a28-a82f-4f59-9d1d-9e980852881f")
-		(property "Reference" "C10"
+		(property "Reference" "C9"
 			(at 256.54 199.136 90)
 			(effects
 				(font
@@ -11723,7 +11671,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C10")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -11739,7 +11687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74b0a22c-7d18-4da2-8bc1-0c4fd65559d8")
-		(property "Reference" "D4"
+		(property "Reference" "D3"
 			(at 283.21 102.87 0)
 			(effects
 				(font
@@ -11799,7 +11747,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D4")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -11881,7 +11829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76816404-46ef-4c3d-88eb-6a3fc812d8c4")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR053"
 			(at 255.27 166.37 0)
 			(effects
 				(font
@@ -11931,7 +11879,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR056")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -11947,7 +11895,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76e18094-d0fd-427f-8b4e-976075f516ee")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 283.21 82.55 0)
 			(effects
 				(font
@@ -12007,75 +11955,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 62.23 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "76f451d5-8dc3-4942-a287-a911086689eb")
-		(property "Reference" "SWBb1"
-			(at 62.23 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gateron_KS-33"
-			(at 62.23 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 62.23 56.388 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 62.23 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 62.484 58.166 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "942d362c-9f75-4bd0-b856-c7ee9a901096")
-		)
-		(pin "2"
-			(uuid "22d09817-ac0e-419e-ba91-fc3b8f4ffb12")
-		)
-		(instances
-			(project ""
-				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWBb1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -12157,7 +12037,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a2b272b-58fb-4f6a-a0bc-e93196816ac7")
-		(property "Reference" "C8"
+		(property "Reference" "C7"
 			(at 256.54 158.496 90)
 			(effects
 				(font
@@ -12209,7 +12089,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C8")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -12293,7 +12173,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7bf056ae-9a61-44b4-bf2a-bdcdf09218b7")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR069"
 			(at 325.12 83.82 0)
 			(effects
 				(font
@@ -12343,143 +12223,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 101.6 182.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7e53d0e4-767f-4fa8-a5f8-c8523ad5ab43")
-		(property "Reference" "SW8va1"
-			(at 101.6 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gateron_KS-33"
-			(at 101.6 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 101.6 175.768 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 101.6 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 101.854 177.546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9c986135-4de8-42f4-9281-2bf02a3f3b70")
-		)
-		(pin "2"
-			(uuid "3dfd137c-ece7-494e-a96a-016efde50b85")
-		)
-		(instances
-			(project "PicoSax"
-				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SW8va1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 62.23 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7e9836d8-e739-41a1-9489-d483d0a22f12")
-		(property "Reference" "SWD1"
-			(at 62.23 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gateron_KS-33"
-			(at 62.23 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 62.23 103.378 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 62.23 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 62.484 105.156 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "639fc4ae-234b-4f6f-9cf4-516a5a3fc580")
-		)
-		(pin "2"
-			(uuid "8e597a6d-e1ae-4789-8d46-53cdf5416476")
-		)
-		(instances
-			(project "PicoSax"
-				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWD1")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -12494,7 +12238,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "80bfc4ab-4cdb-4e69-924f-29c3587d34d3")
-		(property "Reference" "C14"
+		(property "Reference" "C13"
 			(at 326.39 117.856 90)
 			(effects
 				(font
@@ -12546,7 +12290,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C14")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -12562,7 +12306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82d15ecd-29dc-4c3e-8c54-f8ebf83e301d")
-		(property "Reference" "D5"
+		(property "Reference" "D4"
 			(at 283.21 123.19 0)
 			(effects
 				(font
@@ -12622,7 +12366,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D5")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -12703,7 +12447,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8606230c-0a6b-43a5-a53f-9b8c3e5462b4")
-		(property "Reference" "C18"
+		(property "Reference" "C17"
 			(at 326.39 199.136 90)
 			(effects
 				(font
@@ -12755,7 +12499,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C18")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -12837,7 +12581,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "874bc771-570c-4299-987d-5ef95877a622")
-		(property "Reference" "C9"
+		(property "Reference" "C8"
 			(at 256.54 178.816 90)
 			(effects
 				(font
@@ -12889,7 +12633,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C9")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -13032,33 +12776,17 @@
 		)
 	)
 	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 101.6 63.5 0)
+		(lib_id "PicoSax:+5V")
+		(at 332.74 156.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "89213621-53af-40e0-b799-43ae9796d2fa")
-		(property "Reference" "SWDup1"
-			(at 101.6 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gateron_KS-33"
-			(at 101.6 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 101.6 56.388 0)
+		(uuid "89d454a4-4d84-41ba-a716-16070770321f")
+		(property "Reference" "#PWR080"
+			(at 336.55 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13066,8 +12794,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 101.6 63.5 0)
+		(property "Value" "+5V"
+			(at 328.93 156.2099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 332.74 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13075,8 +12812,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 101.854 58.166 0)
+		(property "Datasheet" ""
+			(at 332.74 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 332.74 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13085,15 +12831,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "56e5e0a4-097a-48d0-9ace-232e499add1e")
-		)
-		(pin "2"
-			(uuid "10bc7830-2ec9-4d11-8d07-da72b1d41a77")
+			(uuid "6c062866-5717-4a97-a3f2-ea2ff73dfbe0")
 		)
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWDup1")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -13109,7 +12852,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c3e3bde-bd7e-470c-af43-673cca9e8243")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR066"
 			(at 309.88 173.99 0)
 			(effects
 				(font
@@ -13160,7 +12903,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR064")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -13392,74 +13135,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 62.23 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "926a1d38-4f9a-455f-a35c-642645979189")
-		(property "Reference" "SWE1"
-			(at 62.23 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gateron_KS-33"
-			(at 62.23 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 62.23 88.138 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 62.23 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 62.484 89.916 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d6df9a38-c1c5-4340-9e14-6c2f1f78bf9f")
-		)
-		(pin "2"
-			(uuid "b4b6dbde-045d-4b51-a9bc-052c89c432f2")
-		)
-		(instances
-			(project "PicoSax"
-				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWE1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PicoSax:R")
 		(at 110.49 186.69 0)
 		(unit 1)
@@ -13539,7 +13214,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94da003a-cda6-4cb4-9fcc-699dc9b03100")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR041"
 			(at 196.85 168.91 0)
 			(effects
 				(font
@@ -13589,7 +13264,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR042")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -13605,7 +13280,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95d88d44-87ed-40be-9279-ce68e4c700fd")
-		(property "Reference" "D9"
+		(property "Reference" "D8"
 			(at 353.06 60.96 0)
 			(effects
 				(font
@@ -13665,7 +13340,74 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D9")
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:+5V")
+		(at 332.74 176.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "963c7059-61ba-4fa9-965e-dd90daa5a6a3")
+		(property "Reference" "#PWR081"
+			(at 336.55 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 328.93 176.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 332.74 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 332.74 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 332.74 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09a18a95-912a-4eb2-9df2-a4cebd3dda33")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -13739,6 +13481,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PicoSax:+5V")
+		(at 262.89 135.89 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9913e89d-1752-42c1-87fe-40b376095d1c")
+		(property "Reference" "#PWR058"
+			(at 266.7 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 259.08 135.8899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 262.89 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "712753b6-4458-430f-b39d-70d5debd545c")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PicoSax:GND")
 		(at 303.53 92.71 90)
 		(unit 1)
@@ -13748,7 +13557,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b437f2d-43c5-4b50-b2e3-7d6b81fc35e5")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR062"
 			(at 309.88 92.71 0)
 			(effects
 				(font
@@ -13799,7 +13608,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR060")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -14066,7 +13875,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a015856d-5c79-48ca-943a-88a91211616d")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR074"
 			(at 325.12 186.69 0)
 			(effects
 				(font
@@ -14116,7 +13925,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR072")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -14132,7 +13941,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a126eeaa-4764-4b42-9958-58118aac4bd4")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR063"
 			(at 309.88 113.03 0)
 			(effects
 				(font
@@ -14183,7 +13992,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR061")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -14266,7 +14075,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5e66eda-8596-4191-b5d4-fa693865d121")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR039"
 			(at 191.77 194.31 0)
 			(effects
 				(font
@@ -14316,7 +14125,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR040")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -14332,7 +14141,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6a16cba-6099-401d-97d0-4278e1cbde39")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR065"
 			(at 309.88 153.67 0)
 			(effects
 				(font
@@ -14383,7 +14192,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR063")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -14601,7 +14410,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "abf68836-bd9b-464a-ac0b-d14e58acbaed")
-		(property "Reference" "C11"
+		(property "Reference" "C10"
 			(at 309.626 203.2 90)
 			(effects
 				(font
@@ -14653,74 +14462,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PicoSax:C")
-		(at 259.08 77.47 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ad28a1f1-2d84-4d80-9c5e-1cb632020477")
-		(property "Reference" "C4"
-			(at 256.54 75.946 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 263.652 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 255.27 78.4352 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 259.08 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 259.08 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ccdfaf95-9f9f-43c8-95bc-47b6378eedc1")
-		)
-		(pin "1"
-			(uuid "e84ff49e-854b-48e9-9065-c2a340b7f1d1")
-		)
-		(instances
-			(project "PicoSax"
-				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C4")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -14869,7 +14611,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b09a7d0f-0edf-41cd-9701-476a62901ff2")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR089"
 			(at 379.73 194.31 0)
 			(effects
 				(font
@@ -14920,7 +14662,143 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR080")
+					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 62.23 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0f558cc-5d2a-4365-bb02-3615964b98d5")
+		(property "Reference" "SWD1"
+			(at 62.23 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Omron_B3K_L13L"
+			(at 62.23 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 62.23 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 62.484 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c907a5a3-b9b0-4c1c-b116-05574390a33d")
+		)
+		(pin "2"
+			(uuid "52d1b45f-3f0a-459b-b920-089d29ad92e7")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "SWD1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 101.6 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1a8a599-5452-49c4-b9ff-680ce5404ae8")
+		(property "Reference" "SWG1"
+			(at 101.6 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Omron_B3K_L13L"
+			(at 101.6 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 101.6 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 101.854 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6118f1ad-ae63-4258-acff-5f349811c752")
+		)
+		(pin "2"
+			(uuid "c63ec11e-b732-4b1d-aba9-b9f40ab98037")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "SWG1")
 					(unit 1)
 				)
 			)
@@ -14936,7 +14814,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1b112f9-a3cb-452e-97f3-c4037982e3b6")
-		(property "Reference" "D13"
+		(property "Reference" "D12"
 			(at 353.06 143.51 0)
 			(effects
 				(font
@@ -14996,7 +14874,74 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D13")
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:+5V")
+		(at 332.74 196.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1bb0287-8f05-4f9e-898a-d37ac6d22545")
+		(property "Reference" "#PWR082"
+			(at 336.55 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 328.93 196.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 332.74 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 332.74 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 332.74 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c302c564-4988-48b6-b201-d9a5b4dd9fa5")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -15012,7 +14957,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b771dde7-1cf1-482b-a00e-bf33c7936ec5")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR054"
 			(at 255.27 186.69 0)
 			(effects
 				(font
@@ -15062,7 +15007,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR057")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -15077,7 +15022,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b7bc1342-c3a4-49ac-a115-cf305d6dd8f4")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR075"
 			(at 325.12 207.01 0)
 			(effects
 				(font
@@ -15127,7 +15072,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR073")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -15200,33 +15145,33 @@
 		)
 	)
 	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 101.6 143.51 0)
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 62.23 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bd268e93-e427-4ae9-97f2-2451cb18cf9b")
-		(property "Reference" "SWSpr1"
-			(at 101.6 137.16 0)
+		(uuid "bb94c8e4-9bf5-47b7-bd0d-b443180bf2b9")
+		(property "Reference" "SWE1"
+			(at 62.23 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Gateron_KS-33"
-			(at 101.6 139.7 0)
+		(property "Value" "Omron_B3K_L13L"
+			(at 62.23 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 101.6 136.398 0)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 62.23 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15235,7 +15180,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 143.51 0)
+			(at 62.23 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15244,7 +15189,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 101.854 138.176 0)
+			(at 62.484 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15253,15 +15198,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "7a6bde12-98fc-4461-9de4-caae2691d537")
+			(uuid "d024a096-89ab-478f-b673-9fac41a28bc3")
 		)
 		(pin "2"
-			(uuid "19aef03b-9644-4823-b1c5-3dd96eb22c4f")
+			(uuid "24148256-dbf4-4008-9944-54e789958987")
 		)
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWSpr1")
+					(reference "SWE1")
 					(unit 1)
 				)
 			)
@@ -15338,6 +15283,74 @@
 		)
 	)
 	(symbol
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 101.6 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfe3feaf-be86-4edb-a20a-6711cc5942da")
+		(property "Reference" "SWSPR1"
+			(at 101.6 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Omron_B3K_L13L"
+			(at 101.6 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 101.6 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 101.854 138.176 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9faed696-7e4d-4ca6-aae2-0c143e063f92")
+		)
+		(pin "2"
+			(uuid "5e4d7f84-16ba-4f16-a656-ae3f3c8fa4f0")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "SWSPR1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PicoSax:GND")
 		(at 373.38 153.67 90)
 		(unit 1)
@@ -15347,7 +15360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c286b6a8-b0dc-47ab-a1a2-6d334ed39945")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR087"
 			(at 379.73 153.67 0)
 			(effects
 				(font
@@ -15398,7 +15411,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR078")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -15465,6 +15478,73 @@
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:+5V")
+		(at 332.74 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c84493e0-a0b5-449e-8d9a-00dec7055bd9")
+		(property "Reference" "#PWR076"
+			(at 336.55 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 328.93 73.6599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 332.74 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 332.74 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 332.74 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5dbfa7e-e614-4ff9-8b63-e5ac275e92c8")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -15666,7 +15746,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cbe47e82-bed1-4144-8660-e6da9e257386")
-		(property "Reference" "C5"
+		(property "Reference" "C4"
 			(at 256.54 97.536 90)
 			(effects
 				(font
@@ -15718,7 +15798,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "C5")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -15734,7 +15814,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ccef24e6-c90c-427a-82a6-0408ddd22824")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR086"
 			(at 379.73 133.35 0)
 			(effects
 				(font
@@ -15785,7 +15865,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR077")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -15928,33 +16008,17 @@
 		)
 	)
 	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 101.6 125.73 0)
+		(lib_id "PicoSax:+5V")
+		(at 332.74 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cee555d2-ebc8-4b20-b9dc-f52ebd3280ab")
-		(property "Reference" "SWGs1"
-			(at 101.6 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gateron_KS-33"
-			(at 101.6 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 101.6 118.618 0)
+		(uuid "cf42adac-2d25-47ae-858e-cd755e5daa10")
+		(property "Reference" "#PWR077"
+			(at 336.55 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15962,8 +16026,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 101.6 125.73 0)
+		(property "Value" "+5V"
+			(at 328.93 95.2499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 332.74 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15971,8 +16044,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 101.854 120.396 0)
+		(property "Datasheet" ""
+			(at 332.74 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 332.74 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15981,15 +16063,79 @@
 			)
 		)
 		(pin "1"
-			(uuid "1d65983b-aca4-43f4-835a-a18d0d7b0d2b")
-		)
-		(pin "2"
-			(uuid "c21f794f-bfb0-4ddb-8c95-32a5fe71864d")
+			(uuid "959a3f34-ecc9-4641-a77e-a8db3dd264b7")
 		)
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWGs1")
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 62.23 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d49b6045-60ca-4e77-98c5-d13088831355")
+		(property "Reference" "SW8vb1"
+			(at 62.484 175.006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Omron_B3K_L13L"
+			(at 62.23 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 62.23 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 62.484 176.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57e7c225-eb70-4352-b8ae-9303ace470f4")
+		)
+		(pin "2"
+			(uuid "e7b334c3-5466-4c3a-99fd-cb972afa914e")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "SW8vb1")
 					(unit 1)
 				)
 			)
@@ -16005,7 +16151,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6fa2d26-340d-48b9-8b62-e1d32ec39db3")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR085"
 			(at 379.73 113.03 0)
 			(effects
 				(font
@@ -16056,7 +16202,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR076")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -16139,7 +16285,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db98dd37-d06a-45a3-bbe7-a57b7a1ee9df")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR042"
 			(at 215.9 163.83 0)
 			(effects
 				(font
@@ -16190,40 +16336,40 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR044")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PicoSax:Gateron_KS-33")
-		(at 62.23 139.7 0)
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 101.6 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e5bef41b-ee0a-408a-86f3-c615587304e2")
-		(property "Reference" "SWC1"
-			(at 62.23 133.35 0)
+		(uuid "e0447b3a-6346-43cf-a888-05f565eb9261")
+		(property "Reference" "SWA1"
+			(at 101.6 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Gateron_KS-33"
-			(at 62.23 135.89 0)
+		(property "Value" "Omron_B3K_L13L"
+			(at 101.6 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PicoSax:KS-33"
-			(at 62.23 132.588 0)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 101.6 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16232,7 +16378,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 62.23 139.7 0)
+			(at 101.6 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16241,7 +16387,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 62.484 134.366 0)
+			(at 101.854 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16250,15 +16396,83 @@
 			)
 		)
 		(pin "1"
-			(uuid "ca8cb2e4-7415-49d1-ac4a-9ab18471c8c6")
+			(uuid "bf317da0-1115-45b3-8e94-46ee110c8b04")
 		)
 		(pin "2"
-			(uuid "bf02d5bd-8e08-468b-8d3c-78146ebd82f0")
+			(uuid "abdcc999-506b-4fcd-af19-ec3cd70b4ad1")
 		)
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "SWC1")
+					(reference "SWA1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 101.6 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4425055-2d6d-49d2-8a21-4b23694eee68")
+		(property "Reference" "SWDup1"
+			(at 101.6 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Omron_B3K_L13L"
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 101.6 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 101.854 58.166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea84e945-2528-48b1-b128-f2809dbf13f0")
+		)
+		(pin "2"
+			(uuid "f8b040e2-7c39-4b0e-8a06-1c206f4e4efd")
+		)
+		(instances
+			(project ""
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "SWDup1")
 					(unit 1)
 				)
 			)
@@ -16274,7 +16488,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6d1c0d0-d15a-45ce-a0a5-229a6620540c")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR072"
 			(at 325.12 146.05 0)
 			(effects
 				(font
@@ -16324,7 +16538,75 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR070")
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 101.6 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7ea682e-c993-4cd1-a6c3-63439e13cee2")
+		(property "Reference" "SWGs1"
+			(at 101.6 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Omron_B3K_L13L"
+			(at 101.6 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 101.6 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 101.854 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af641b6c-e5b3-462b-974e-307e818374f6")
+		)
+		(pin "2"
+			(uuid "8c5a48fa-aec5-4099-938a-ced91057044e")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "SWGs1")
 					(unit 1)
 				)
 			)
@@ -16340,7 +16622,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8115934-3cbc-4aae-ba0c-85958a860108")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR070"
 			(at 325.12 105.41 0)
 			(effects
 				(font
@@ -16390,7 +16672,74 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR068")
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:+5V")
+		(at 332.74 135.89 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e81cc3ea-3ccd-4d50-949b-f5b3e93528a4")
+		(property "Reference" "#PWR079"
+			(at 336.55 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 328.93 135.8899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 332.74 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 332.74 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 332.74 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c83dfae2-cf6c-4726-b2bd-a3213b62d992")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -16476,7 +16825,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edffb146-7a1b-49a0-853c-5fd6ad96d3fb")
-		(property "Reference" "D14"
+		(property "Reference" "D13"
 			(at 353.06 163.83 0)
 			(effects
 				(font
@@ -16536,7 +16885,7 @@
 		(instances
 			(project "PicoSax"
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "D14")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -16686,7 +17035,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f524b1fb-3f80-4b90-ae35-cbfe7ce7b72b")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR067"
 			(at 309.88 194.31 0)
 			(effects
 				(font
@@ -16737,7 +17086,7 @@
 		(instances
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
-					(reference "#PWR065")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -17004,6 +17353,74 @@
 			(project ""
 				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PicoSax:Omron_B3K_L13L")
+		(at 101.6 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fef8fd73-124a-4dd0-b80f-aaf45d23d51f")
+		(property "Reference" "SW8va1"
+			(at 101.6 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Omron_B3K_L13L"
+			(at 101.6 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyLibrary:Omron B3K L13L"
+			(at 101.6 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 101.854 177.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1a0b41b-d754-4ac9-bef6-a4c6d84ac70e")
+		)
+		(pin "2"
+			(uuid "da421f20-91ec-4f17-9bba-d5e9ed7b9505")
+		)
+		(instances
+			(project "PicoSax"
+				(path "/ef0a1a94-772b-4785-b748-662adf24a5cd"
+					(reference "SW8va1")
 					(unit 1)
 				)
 			)
